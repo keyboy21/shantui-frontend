@@ -1,0 +1,31 @@
+.head {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1199px) {
+  .head {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .material {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .head {
+    font-size: 35px;
+  }
+}
+@media (max-width: 575.98px) {
+  .head {
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

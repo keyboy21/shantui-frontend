@@ -1,0 +1,27 @@
+.service_h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #333;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+.vehicles_list {
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+.veh_col {
+  margin-bottom: 30px;
+}
+.big {
+  position: relative;
+  overflow: hidden;
+  height: 418px;
+}
+@media (max-width: 575px) {
+  .big {
+    height: 118px;
+  }
+}

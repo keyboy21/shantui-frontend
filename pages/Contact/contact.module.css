@@ -1,0 +1,74 @@
+.cont {
+  text-align: center;
+}
+.con_w {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #333;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+.cont_col {
+  background-color: #ffff;
+  padding: 50px 117px 117px 100px;
+  margin-bottom: 100px;
+}
+.cont_head {
+  text-align: center;
+}
+.cont_head2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #4f4f4f;
+}
+.cont_head3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #bdbdbd;
+}
+.form_input {
+  display: flex;
+}
+.form_name {
+  width: 100%;
+  height: 40px;
+  margin-right: 30px;
+  border-radius: 0;
+  margin-bottom: 16px;
+}
+.form_tel {
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+  margin-bottom: 16px;
+}
+.areamessage {
+  height: 10rem;
+}
+#emailAddress:focus,
+.areamessage:focus,
+.form_name:focus,
+.form_tel:focus,
+.inputemail:focus {
+  outline: 0;
+  box-shadow: 0 0 0 5px #ffc800;
+}
+@media (max-width: 991px) {
+  .cont_col {
+    padding: 50px 40px 50px 40px;
+  }
+}
+@media (max-width: 575px) {
+  .form_input {
+    flex-direction: column;
+  }
+}

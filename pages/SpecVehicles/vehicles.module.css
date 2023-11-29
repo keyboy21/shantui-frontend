@@ -1,0 +1,63 @@
+.veh_h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #333;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+.spec {
+  padding: 50px 100px;
+  background-color: #fff;
+}
+.spec_menu {
+  margin-bottom: 50px;
+}
+.spec_col {
+  margin-bottom: 24px;
+  text-align: start;
+}
+.spec_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #828282;
+  cursor: pointer;
+}
+.spec_title:hover {
+  color: #ffc000;
+}
+.vehicles_list {
+  margin-bottom: 70px;
+}
+.veh_col {
+  margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .spec {
+    padding: 50px 25px;
+  }
+  .spec_col {
+    margin-bottom: 16px;
+  }
+  .spec_title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .veh_h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .spec_col {
+    margin-bottom: 13px;
+  }
+  .spec_title {
+    font-size: 16px;
+  }
+}

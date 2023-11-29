@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://shantuiuzb.com
+
+# Sitemaps
+Sitemap: https://shantuiuzb.com/sitemap.xml

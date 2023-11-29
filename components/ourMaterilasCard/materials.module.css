@@ -1,0 +1,52 @@
+.outmaterial {
+  padding: 10px 10px 0 10px;
+  border: none;
+  box-shadow: #f5f5f5 0 0 20px 15px;
+  height: 100%;
+}
+.cardbody {
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+}
+.bottomcard {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #bdbdbd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px 25px 5px;
+}
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: #bdbdbd !important;
+  text-decoration: none;
+}
+.materail_img {
+  position: relative;
+  height: 210px;
+}
+.cardtext {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #333;
+  margin-top: 9px;
+}
+@media (max-width: 991px) {
+  .materail_img {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .cardtext {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 9px !important;
+  }
+}

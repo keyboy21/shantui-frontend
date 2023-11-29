@@ -1,0 +1,47 @@
+.project_h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  color: #333;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+.project_product {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.project_about {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.project_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #4f4f4f;
+}
+/* .big{position:relative;} */
+@media (max-width: 767px) {
+  .project_product_in {
+    margin-bottom: 30px;
+  }
+  .project_about {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .project_about {
+    text-align: center;
+  }
+  /* .big{display: none;} */
+}
