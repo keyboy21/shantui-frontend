@@ -29,7 +29,7 @@ const Vehicles: FC<props> = ({ category, product }) => {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://shantuiuzb.com/SpecVehicles" />
+        <link rel="canonical" href="https://sttkm.uz/SpecVehicles" />
       </Head>
       <Mainlayout title="| Vehicles">
         <h1 className={classes.veh_h1}>Спецтехника</h1>

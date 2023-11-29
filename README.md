@@ -1,1 +1,1 @@
-## shantuiuzb.com
+## Sttkm.uz

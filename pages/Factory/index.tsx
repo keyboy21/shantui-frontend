@@ -15,7 +15,7 @@ const Factories: FC<props> = ({ data }) => {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://shantuiuzb.com/Factory" />
+        <link rel="canonical" href="https://sttkm.uz/Factory" />
       </Head>
       <Mainlayout title="| Factory">
         <h1 className={classes.fac_h1}>Заводы</h1>

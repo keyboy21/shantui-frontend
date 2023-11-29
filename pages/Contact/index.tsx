@@ -38,7 +38,7 @@ const Contact: FC = () => {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://shantuiuzb.com/Contact" />
+        <link rel="canonical" href="https://sttkm.uz/Contact" />
       </Head>
 
       <Mainlayout title="| Contact">

@@ -1,6 +1,6 @@
 import { memo, FC } from 'react';
-import Image from 'next/image';
 import classes from './footer.module.css';
+import Image from 'next/image';
 import LogoFooter from '../../public/Logofooterlogo.svg';
 import telgram from '../../public/Ellipsefootertelegram.svg';
 import instagram from '../../public/Ellipse8footerinstagram.svg';

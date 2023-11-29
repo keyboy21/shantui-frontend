@@ -36,7 +36,7 @@ const Mainlayout: FC<props> = ({ children, title = '' }) => {
   return (
     <>
       <Head>
-        <title>{`Shantui ${title}`}</title>
+        <title>{`Spets Texnika Tashkent ${title}`}</title>
       </Head>
       <nav
         className={`navbar navbar-expand-lg fixed-top navbar-light ${classes.navbar1}`}
@@ -46,8 +46,8 @@ const Mainlayout: FC<props> = ({ children, title = '' }) => {
           <Link
             href="/"
             className="navbar-brand"
-            title="Shantui"
-            aria-label="Shantui Web Page"
+            title="Spets Texnika Tashkent"
+            aria-label="Stt Web Page"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

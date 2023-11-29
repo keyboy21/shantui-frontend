@@ -3,7 +3,7 @@ import Link from 'next/link';
 import classes from '../SpecVehiclesCard/vehiclescard.module.css';
 import { specCategory } from '@/interface/Data';
 import { Zoom } from 'react-awesome-reveal';
-import CardCategory from '../CardCategory/CardCategory';
+import CardCategory from '@/components/CardCategory/CardCategory';
 
 type props = {
   firstBuldozer: specCategory[];
@@ -17,9 +17,9 @@ const Preview: FC<props> = ({ firstBuldozer }) => {
           <div className="row">
             {firstBuldozer.map((item) => (
               <Zoom
-                key={item.id}
                 triggerOnce={true}
                 className="col-md-6 col-lg-3"
+                key={item.id}
               >
                 <CardCategory
                   id={item.id}

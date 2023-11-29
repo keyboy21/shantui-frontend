@@ -18,7 +18,7 @@ const Project: FC<props> = ({ blog }) => {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://shantuiuzb.com/Projects/" />
+        <link rel="canonical" href="https://sttkm.uz/Projects/" />
       </Head>
 
       <Mainlayout title="| Projects">

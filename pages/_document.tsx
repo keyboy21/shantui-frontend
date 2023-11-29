@@ -22,14 +22,14 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta
-            name="keywords"
-            content="Shantui, Автобетоносмесители,Самосвалы,Фронтальные погрузчики,
-          Автогрейдеры,Колесные экскаваторы,Башенные краны,Компакторы,Кирпичные линии,Мельницы дробления минерального порошка,
-          Карьерные самосвалы"
-          />
-          <meta
             itemProp="image"
             content="/windows11/Wide310x150Logo.scale-400.png"
+          />
+          <meta
+            name="keywords"
+            content="Spets Texnika Tashkent, Автобетоносмесители,Самосвалы,Фронтальные погрузчики,
+          Автогрейдеры,Колесные экскаваторы,Башенные краны,Компакторы,Кирпичные линии,Мельницы дробления минерального порошка,
+          Карьерные самосвалы"
           />
           <meta
             name="application-name"
@@ -40,7 +40,10 @@ class MyDocument extends Document {
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
-          <meta name="apple-mobile-web-app-title" content="Shantui" />
+          <meta
+            name="apple-mobile-web-app-title"
+            content="SPETS TEXNIKA TASHKENT"
+          />
           <meta
             name="description"
             content="Компания СП ООО 'SPETS TEXNIKA TASHKENT' (Спецтехника Ташкент) - имеет 17 летний опыт в сфере поставок спецтехники и оборудования из Китая."
@@ -75,8 +78,8 @@ class MyDocument extends Document {
           />
 
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://shantuiuzb.com/" />
-          <meta property="og:title" content="Shantui" />
+          <meta property="og:url" content="https://sttkm.uz/" />
+          <meta property="og:title" content="Spets Texnika Tashkent" />
           <meta
             property="og:description"
             content="Компания СП ООО 'SPETS TEXNIKA TASHKENT' (Спецтехника Ташкент) - имеет 17 летний опыт в сфере поставок спецтехники и оборудования из Китая."
@@ -87,8 +90,8 @@ class MyDocument extends Document {
           />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="twitter:url" content="https://shantuiuzb.com/" />
-          <meta property="twitter:title" content="Shantui" />
+          <meta property="twitter:url" content="https://sttkm.uz/" />
+          <meta property="twitter:title" content="Spets Texnika Tashkent" />
           <meta
             property="twitter:description"
             content="Компания СП ООО 'SPETS TEXNIKA TASHKENT' (Спецтехника Ташкент) - имеет 17 летний опыт в сфере поставок спецтехники и оборудования из Китая."
@@ -100,8 +103,7 @@ class MyDocument extends Document {
 
           <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
-          <link rel="canonical" href="https://shantuiuzb.com/" />
-          {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" /> */}
+          <link rel="canonical" href="https://sttkm.uz" />
           <script
             data-partytown-config
             dangerouslySetInnerHTML={{
@@ -113,6 +115,7 @@ class MyDocument extends Document {
         `,
             }}
           />
+          {/* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" /> */}
         </Head>
         <body>
           <Main />

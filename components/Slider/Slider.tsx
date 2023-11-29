@@ -127,11 +127,11 @@ const Slider: FC = () => {
               }}
             >
               <iframe
-                loading="lazy"
                 width={'100%'}
                 height={'100%'}
                 src="https://www.youtube.com/embed/TJX-f4TZiAw?autoplay=1&mute=1&loop=1"
                 title="YouTube video player"
+                loading="lazy"
               />
             </div>
 

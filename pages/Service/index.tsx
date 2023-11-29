@@ -18,7 +18,7 @@ const Services: FC<props> = ({ blog }) => {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://shantuiuzb.com/VideoService/" />
+        <link rel="canonical" href="https://sttkm.uz/VideoService/" />
       </Head>
 
       <Mainlayout title="| Sevice">

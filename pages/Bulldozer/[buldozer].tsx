@@ -34,7 +34,7 @@ const Buldozer: FC<props> = ({ bulldozer }) => {
       <Head>
         <link
           rel="canonical"
-          href={`https://shantuiuzb.com/Bulldozer/${bulldozer[0].id}`}
+          href={`https://sttkm.uz/Bulldozer/${bulldozer[0].id}`}
         />
       </Head>
       <Mainlayout title="| Vehicles">

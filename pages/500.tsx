@@ -11,7 +11,7 @@ export default function Custom500() {
       <br />
       <br />
       <h3>
-        <a className={classes.al} href="https://shantuiuzb.com">
+        <a className={classes.al} href="https://sttkm.uz">
           Возвращаться на главный
         </a>
         &nbsp;|&nbsp;

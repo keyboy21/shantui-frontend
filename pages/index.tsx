@@ -34,7 +34,6 @@ const Home: FC<props> = ({ category, blog }) => {
 };
 
 export default Home;
-
 export const getStaticProps: GetStaticProps = async () => {
   const res = await axios(`${process.env.API_URL}/api/stc`);
   const category = res.data.data as specCategory[];

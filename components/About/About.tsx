@@ -2,6 +2,10 @@ import { FC } from 'react';
 import Image from 'next/image';
 import { Zoom } from 'react-awesome-reveal';
 import classes from './about.module.css';
+import BackPicture from '../../public/back.webp';
+import aboutPicture from '../../public/aboutGroup60.svg';
+import aboutPicture2 from '../../public/aboutGroup61.svg';
+import aboutPicture3 from '../../public/aboutGroup62.svg';
 
 const About: FC = () => {
   return (
