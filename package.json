@@ -1,5 +1,5 @@
 {
-  "name": "shantui",
+  "name": "shantui-main",
   "private": true,
   "scripts": {
     "dev": "next dev",
