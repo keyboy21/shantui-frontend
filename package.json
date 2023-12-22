@@ -1,0 +1,32 @@
+{
+  "name": "shantui-web",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "npx tsc --pretty --noEmit",
+    "format:check": "npx @biomejs/biome check ./src",
+    "format": "npx @biomejs/biome format --write ./src"
+  },
+  "dependencies": {
+    "clsx": "^2.0.0",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5"
+  }
+}
