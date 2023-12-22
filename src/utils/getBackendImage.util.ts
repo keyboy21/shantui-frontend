@@ -6,5 +6,5 @@
 import { BASE_URL } from '@/configs/env.config';
 
 export const getBackendImage = (url: string): string => {
-	return `${BASE_URL}/${url}`;
+	return `${BASE_URL}${url}`;
 };

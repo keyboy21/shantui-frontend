@@ -1,8 +1,10 @@
-import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Footer } from '@/layout/Footer';
+import { Header } from '@/layout/Header';
 import '@/styles/globals.css';
 import { LayoutComponent } from '@/types/next.types';
 import { cn } from '@/utils/cn.util';
+import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
 const montserrat = Montserrat({ subsets: ['cyrillic'] });
 
 export const metadata: Metadata = {
@@ -19,7 +21,9 @@ const RootLayout: LayoutComponent = async ({ children }) => {
 				<link rel="icon" href="/favicon.ico" />
 			</head>
 			<body className={cn(montserrat.className, 'scroll-smooth antialiased')}>
+				<Header />
 				<main>{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);
