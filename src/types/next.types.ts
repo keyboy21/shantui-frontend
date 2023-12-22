@@ -1,22 +1,23 @@
 import type { Metadata, ResolvingMetadata } from 'next';
 import type { FC, ReactNode } from 'react';
 
-export interface ParamsWith {
+export interface ParamsWithSlug {
 	slug?: string;
 }
 
 export type Page<
-	Params extends ParamsWith = ParamsWith,
+	Params extends ParamsWithSlug = ParamsWithSlug,
 	SearchParams extends object = object,
 > = FC<{
 	params: Params;
 	searchParams: SearchParams;
 }>;
 
-export type LayoutComponent<Params extends ParamsWith = ParamsWith> = FC<{
-	params: Params;
-	children: ReactNode;
-}>;
+export type LayoutComponent<Params extends ParamsWithSlug = ParamsWithSlug> =
+	FC<{
+		params: Params;
+		children: ReactNode;
+	}>;
 
 export type ErrorRouteComponent = FC<{
 	error: Error;
@@ -30,7 +31,7 @@ export type RenderBehavior =
 	| 'force-static';
 
 export type DynamicMetadata<
-	Params extends ParamsWith = ParamsWith,
+	Params extends ParamsWithSlug = ParamsWithSlug,
 	SearchParams extends object = object,
 > = (
 	params: {

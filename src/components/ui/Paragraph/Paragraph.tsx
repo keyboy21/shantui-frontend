@@ -11,7 +11,6 @@ export const Paragraph: FC<ParagraphProps> = ({
 	return (
 		<p
 			className={cn(
-				'',
 				{
 					'text-xs': size === 'xs',
 					'text-sm': size === 'sm',
