@@ -1,1 +1,1 @@
-export {BulldozerCard} from './BulldozerCard'
+export { BulldozerCard } from './BulldozerCard';

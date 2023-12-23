@@ -19,7 +19,6 @@ export type Blog = {
 	title: string;
 	Video: string;
 	create_at: Date;
-	article: number;
 };
 
 export type Factory = {

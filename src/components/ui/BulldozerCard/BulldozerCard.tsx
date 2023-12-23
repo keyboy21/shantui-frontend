@@ -2,7 +2,7 @@ import { cn } from '@/utils/cn.util';
 import type { FC } from 'react';
 import NextImage from 'next/image';
 import { getBackendImage } from '@/utils/getBackendImage.util';
-import { LinkButton } from '@/components/ui/Button';
+import { LinkButton } from '@/components/ui/LinkButton';
 import { Vehicle } from '@/types/all.types';
 import { RouterConfig } from '@/configs/router.config';
 import { Heading } from '../Heading';
