@@ -1,9 +1,8 @@
-import { Footer } from '@/layout/Footer';
-import { Header } from '@/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { Header } from '@/components/layout/Header';
 import '@/styles/globals.css';
 import { LayoutComponent } from '@/types/next.types';
 import { cn } from '@/utils/cn.util';
-import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 const montserrat = Montserrat({ subsets: ['cyrillic'] });
 

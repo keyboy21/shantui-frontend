@@ -11,7 +11,7 @@ export const LinkButton: FC<LinkButtonProps> = ({
 	return (
 		<Link
 			className={cn(
-				'px-12 py-3 w-full text-center text-black transition-colors duration-500',
+				'px-5 py-4 w-full text-center text-black transition-colors duration-500',
 				{
 					'bg-primary text-black hover:text-white': styleType === 'primary',
 					'bg-white hover:text-white hover:bg-zinc-400 border border-gray-400 border-solid':

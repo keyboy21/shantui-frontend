@@ -1,5 +1,5 @@
-import type { ComponentProps, FC } from 'react';
 import { cn } from '@/utils/cn.util';
+import type { ComponentProps, FC } from 'react';
 
 export const GMap: FC<MapProps> = ({ className }, ref) => {
 	return (

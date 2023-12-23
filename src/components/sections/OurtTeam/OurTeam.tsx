@@ -1,16 +1,16 @@
+import { Container } from '@/components/ui/Container';
+import { Heading } from '@/components/ui/Heading';
+import { Paragraph } from '@/components/ui/Paragraph';
 import NextImage from 'next/image';
+import Accauntant from '../../../../public/Team/chief-accountant.png';
+import Mechanic from '../../../../public/Team/chief-mechanical-engineer.png';
 import Cook from '../../../../public/Team/cook.webp';
 import Director from '../../../../public/Team/general-director.png';
-import Mechanic from '../../../../public/Team/chief-mechanical-engineer.png';
-import Accauntant from '../../../../public/Team/chief-accountant.png';
 import MarketingManager from '../../../../public/Team/marketing-manager.webp';
 import OfficeManager from '../../../../public/Team/office-manager.webp';
 import SalesManager from '../../../../public/Team/sales-manager.webp';
 import SalesManager2 from '../../../../public/Team/sales-manager2.webp';
 import TenderManager from '../../../../public/Team/tender-procurement-manager.webp';
-import { Heading } from '@/components/ui/Heading';
-import { Container } from '@/components/ui/Container';
-import { Paragraph } from '@/components/ui/Paragraph';
 
 export const TeamSection = () => {
 	return (

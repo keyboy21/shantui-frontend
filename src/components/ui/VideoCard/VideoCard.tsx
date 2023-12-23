@@ -1,7 +1,7 @@
-import type { FC } from 'react';
-import NextImage from 'next/image';
 import { Heading } from '@/components/ui/Heading';
 import { getYoutubeImageUrl } from '@/utils/getYoutubeImage';
+import NextImage from 'next/image';
+import type { FC } from 'react';
 
 export const VideoCard: FC<VideoCardProps> = () => {
 	return (

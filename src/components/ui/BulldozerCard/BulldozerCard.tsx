@@ -1,10 +1,10 @@
-import { cn } from '@/utils/cn.util';
-import type { FC } from 'react';
-import NextImage from 'next/image';
-import { getBackendImage } from '@/utils/getBackendImage.util';
 import { LinkButton } from '@/components/ui/LinkButton';
-import { Vehicle } from '@/types/all.types';
 import { RouterConfig } from '@/configs/router.config';
+import { Vehicle } from '@/types/all.types';
+import { cn } from '@/utils/cn.util';
+import { getBackendImage } from '@/utils/getBackendImage.util';
+import NextImage from 'next/image';
+import type { FC } from 'react';
 import { Heading } from '../Heading';
 
 export const BulldozerCard: FC<BulldozerCardProps> = ({

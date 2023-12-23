@@ -1,5 +1,5 @@
-import type { ComponentPropsWithoutRef, FC } from 'react';
 import { cn } from '@/utils/cn.util';
+import type { ComponentPropsWithoutRef, FC } from 'react';
 
 export const Heading: FC<HeadingProps> = ({
 	children,
