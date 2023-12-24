@@ -1,8 +1,7 @@
 export {
 	Carousel,
-	CarouselItem,
 	CarouselContent,
-	CarouselPrevious,
 	CarouselNext,
-	CarouselApi,
+	CarouselPrevious,
+	CarouselItem,
 } from './Carousel';

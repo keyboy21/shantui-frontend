@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#FFC000"
+        primary: "#FFC000",
+        shantuiblack: "#333333"
       }
     }
   },
