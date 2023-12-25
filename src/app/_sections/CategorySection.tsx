@@ -36,16 +36,17 @@ export const CategorySection = async () => {
 					<Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7">
 						{filteredData.map((category) => (
 							<BulldozerCard
+								key={category.id}
+								link={`${RouterConfig.SpecVehicles()}?id=${category.id}`}
 								image={category.image}
 								name={category.name}
-								id={category.id}
 								buttonStyle="secondary"
 							/>
 						))}
 					</Container>
 					<div className="text-center mt-12">
 						<LinkButton
-							className="px-12 w-fit"
+							className="px-12 w-fit font-medium text-shantuiblack"
 							href={RouterConfig.SpecVehicles()}
 						>
 							ПОСМОТРЕТЬ ВСЕ

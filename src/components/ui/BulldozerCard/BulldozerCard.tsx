@@ -1,44 +1,58 @@
+import { Heading } from '@/components/ui/Heading';
 import { LinkButton } from '@/components/ui/LinkButton';
-import { RouterConfig } from '@/configs/router.config';
 import { Vehicle } from '@/types/component.types';
 import { cn } from '@/utils/cn.util';
 import { getBackendImage } from '@/utils/getBackendImage.util';
 import NextImage from 'next/image';
 import type { FC } from 'react';
-import { Heading } from '../Heading';
 
 export const BulldozerCard: FC<BulldozerCardProps> = ({
 	name,
 	image,
-	id,
 	buttonStyle = 'primary',
+	cardType = 'vehicle',
+	link,
 	className,
 }) => {
 	return (
 		<article
 			className={cn(
-				'px-6 pb-10 pt-3 flex flex-col shadow-md bg-white',
+				'pb-10 pt-3 flex flex-col shadow-lg bg-white',
+				{
+					'px-6': cardType === 'vehicle',
+					'px-3': cardType === 'factory',
+				},
 				className,
 			)}
 		>
-			<div className="min-h-64 min-w-72 relative group">
+			<div
+				className={cn('min-w-64 relative group', {
+					'min-h-72': cardType === 'vehicle',
+					'min-h-80': cardType === 'factory',
+				})}
+			>
 				<NextImage
-					className="object-center object-contain group-hover:scale-110 
-					group-hover:transition group-hover:ease-in-out group-hover:duration-500"
+					className={cn('object-center ', {
+						'object-contain group-hover:scale-110 group-hover:transition group-hover:ease-in-out group-hover:duration-500':
+							cardType === 'vehicle',
+						'object-cover rounded-md': cardType === 'factory',
+					})}
 					src={getBackendImage(image)}
 					fill
 					alt="bulldozer"
 				/>
 			</div>
-			<div className="mt-5 flex flex-col text-center h-full">
-				<Heading as="h2" weight="bold" size="2xl" className="text-balance mb-5">
+			<div className="mt-7 flex flex-col text-center h-full">
+				<Heading
+					as="h3"
+					className={cn('text-balance mb-5', {
+						'font-bold text-2xl': cardType === 'vehicle',
+						'font-medium text-lg': cardType === 'factory',
+					})}
+				>
 					{name}
 				</Heading>
-				<LinkButton
-					className="mt-auto"
-					styleType={buttonStyle}
-					href={RouterConfig.SpecVehicles(id)}
-				>
+				<LinkButton href={link} className="mt-auto" styleType={buttonStyle}>
 					Подробнее
 				</LinkButton>
 			</div>
@@ -46,7 +60,9 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 	);
 };
 
-type BulldozerCardProps = Pick<Vehicle, 'id' | 'name' | 'image'> & {
+type BulldozerCardProps = Pick<Vehicle, 'name' | 'image'> & {
 	className?: string;
 	buttonStyle?: 'primary' | 'secondary';
+	cardType?: 'vehicle' | 'factory';
+	link: string;
 };

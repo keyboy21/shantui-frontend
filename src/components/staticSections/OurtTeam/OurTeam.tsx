@@ -15,7 +15,12 @@ import TenderManager from '../../../../public/Team/tender-procurement-manager.we
 export const TeamSection = () => {
 	return (
 		<section className="mt-20">
-			<Heading as="h2" className="text-center mb-10" weight="bold" size="3xl">
+			<Heading
+				as="h2"
+				className="text-center mb-10 text-shantuiblack"
+				weight="bold"
+				size="3xl"
+			>
 				Наша команда
 			</Heading>
 			<Container className="flex flex-wrap gap-10 md:gap-2 md:gap-y-8 lg:gap-3 xl:gap-x-4 xl:gap-y-9 justify-around *:text-center *:text-balance *:text-[#464646]">

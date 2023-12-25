@@ -1,10 +1,9 @@
 export const RouterConfig = {
 	Home: '/',
-	SpecVehicles: (id?: number) =>
-		id ? `/specvehicles?id=${id}` : '/specvehicles',
+	SpecVehicles: (id?: number) => (id ? `/specvehicles/${id}` : '/specvehicles'),
 	Factories: (id?: number) => (id ? `/factories/${id}` : '/factories'),
 	Projects: '/projects',
-	Services: '/servies',
+	Services: '/service',
 	Contacts: '/contacts',
 } as const;
 
@@ -13,6 +12,6 @@ export const Routes = [
 	{ name: 'Спецтехника', path: '/specvehicles' },
 	{ name: 'Заводы', path: '/factories' },
 	{ name: 'Проекты', path: '/projects' },
-	{ name: 'Сервис', path: '/servies' },
+	{ name: 'Сервис', path: '/service' },
 	{ name: 'Контакты', path: '/contacts' },
 ] as const;

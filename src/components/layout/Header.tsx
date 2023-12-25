@@ -10,7 +10,7 @@ import Logo from '../../../public/logo.svg';
 export const Header = () => {
 	const pathname = usePathname();
 	return (
-		<header className="fixed bg-white w-full z-10 top-0 shadow-md shadow-slate-400">
+		<header className="fixed bg-white w-full z-10 top-0 shadow-md shadow-gray-200">
 			<Container className="flex justify-between py-5 items-center">
 				<Link href={'/'}>
 					<NextImage src={Logo} alt="logo" />
