@@ -1,6 +1,7 @@
 export const RouterConfig = {
 	Home: '/',
-	SpecVehicles: (id?: number) => (id ? `/specvehicles/${id}` : '/specvehicles'),
+	SpecVehicles: (id?: number) =>
+		id ? `/specvehicles?id=${id}` : '/specvehicles',
 	Factories: (id?: number) => (id ? `/factories/${id}` : '/factories'),
 	Projects: '/projects',
 	Services: '/servies',

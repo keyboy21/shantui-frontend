@@ -6,7 +6,7 @@ export const Container: FC<ComponentProps<'div'>> = ({
 	className,
 }) => {
 	return (
-		<div className={cn('container px-4 xl:px-0 2xl:px-16 mx-auto', className)}>
+		<div className={cn('container px-4 xl:px-0 2xl:px-14 mx-auto', className)}>
 			{children}
 		</div>
 	);

@@ -8,3 +8,5 @@ import { YOUTUBE_IMAGE_URL } from '@/configs/env.config';
 export const getYoutubeImageUrl = (url: string): string => {
 	return `${YOUTUBE_IMAGE_URL}${url.slice(17).split('?')[0]}/0.jpg`;
 };
+
+('https://youtu.be/eNdVOaelkR4');

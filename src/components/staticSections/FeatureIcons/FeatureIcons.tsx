@@ -6,7 +6,7 @@ import ServiceIcon from '../../../../public/service-icon.svg';
 
 export const FeatureIcons = () => {
 	return (
-		<section className="relative py-28">
+		<section className="relative py-28 mt-24">
 			<NextImage
 				className="brightness-75"
 				quality={100}

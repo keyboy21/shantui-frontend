@@ -15,11 +15,11 @@ export const Footer = () => {
 	const currentYear = new Date().getFullYear();
 	return (
 		<footer className="bg-shantuiblack py-24">
-			<Container className="grid grid-cols-3 *:text-white">
-				<div className="flex flex-col gap-8">
+			<Container className="grid grid-cols-1 lg:grid-cols-3 *:text-white">
+				<div className="flex flex-col gap-8 items-center lg:items-start">
 					<NextImage src={Logo} alt="logo" />
 					<Paragraph
-						className="text-white text-balance"
+						className="text-white text-balance text-center lg:text-start"
 						size="lg"
 						weight="medium"
 					>
@@ -67,8 +67,12 @@ export const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="space-y-7">
-					<Heading size="2xl" weight="bold">
+				<div className="flex flex-col items-start gap-y-7 lg:items-start mt-7 lg:mt-0">
+					<Heading
+						className="self-center lg:self-start"
+						size="2xl"
+						weight="bold"
+					>
 						СПЕЦТЕХНИКА
 					</Heading>
 					<div className="flex items-center gap-5">
@@ -99,8 +103,12 @@ export const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="space-y-7 self-end">
-					<Heading size="2xl" weight="bold">
+				<div className="flex flex-col gap-y-7 items-start lg:items-start mt-7 lg:mt-0">
+					<Heading
+						className="self-center lg:self-start"
+						size="2xl"
+						weight="bold"
+					>
 						КОНТАКТЫ
 					</Heading>
 					<div className="flex items-center gap-5">
@@ -143,7 +151,7 @@ export const Footer = () => {
 								href="mailto:spestexnikatashkent@gmail.com"
 								rel="noreferrer"
 								target="_blank"
-								className="text-base"
+								className="text-base lg:text-sm xl:text-base text-balance"
 							>
 								spestexnikatashkent@gmail.com
 							</a>

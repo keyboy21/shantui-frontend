@@ -18,7 +18,7 @@ export const TeamSection = () => {
 			<Heading as="h2" className="text-center mb-10" weight="bold" size="3xl">
 				Наша команда
 			</Heading>
-			<Container className="flex flex-wrap gap-12 justify-around *:text-center *:text-balance *:text-[#464646]">
+			<Container className="flex flex-wrap gap-10 md:gap-2 md:gap-y-8 lg:gap-3 xl:gap-x-4 xl:gap-y-9 justify-around *:text-center *:text-balance *:text-[#464646]">
 				<div className="flex flex-col items-center">
 					<NextImage
 						width={203}

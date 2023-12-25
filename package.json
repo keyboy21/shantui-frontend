@@ -10,7 +10,7 @@
     "lint:next": "next lint",
     "lint": "npx @biomejs/biome lint ./src",
     "check-types": "npx tsc --pretty --noEmit",
-    "format:check": "npx @biomejs/biome check --apply ./src",
+    "format:check": "npx @biomejs/biome check ./src",
     "format": "npx @biomejs/biome format --write ./src"
   },
   "dependencies": {
