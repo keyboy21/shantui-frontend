@@ -2,6 +2,7 @@ import { ContactForm } from '@/components/forms/Contact';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Paragraph } from '@/components/ui/Paragraph';
+import { UseDialogProvider } from '@/contexts';
 
 const ContactsPage = () => {
 	return (
@@ -26,7 +27,9 @@ const ContactsPage = () => {
 					<Paragraph size="lg" className="text-center text-gray-600 mb-5">
 						Наши менеджеры свяжитесь с Вами в течении 5 минут!
 					</Paragraph>
-					<ContactForm />
+					<UseDialogProvider>
+						<ContactForm />
+					</UseDialogProvider>
 				</div>
 			</Container>
 		</section>

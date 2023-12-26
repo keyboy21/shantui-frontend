@@ -1,10 +1,29 @@
+'use client';
+import { sendContactMessage } from '@/actions/sendContactMessage';
 import { BaseInput } from '@/components/inputs/BaseInput';
 import { TextArea } from '@/components/inputs/TextArea';
-import { Button } from '@/components/ui/Button';
+import { useDialogData } from '@/contexts';
+import { useRef } from 'react';
+import { Submit } from './Submit';
 
 export const ContactForm = () => {
+	// ==== Dialog Context ==== //
+	const { openSuccesDialog, openErrorDialog } = useDialogData();
+
+	const formRef = useRef<null | HTMLFormElement>(null);
+
+	const onSubmit = async (formdata: FormData) => {
+		const response = await sendContactMessage(formdata);
+		formRef.current?.reset();
+		if (response.ok) {
+			openSuccesDialog();
+		} else {
+			openErrorDialog();
+		}
+	};
+
 	return (
-		<form className="flex flex-col">
+		<form action={onSubmit} ref={formRef} className="flex flex-col">
 			<div className="flex flex-col md:flex-row md:justify-between gap-6">
 				<BaseInput
 					autoComplete="name"
@@ -37,7 +56,7 @@ export const ContactForm = () => {
 				name="email"
 			/>
 			<TextArea required={true} id="message" name="message" label="Собшения" />
-			<Button className="mt-5 h-12">Отправить</Button>
+			<Submit />
 		</form>
 	);
 };
