@@ -2,19 +2,7 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { VideoCard } from '@/components/ui/VideoCard';
 import { BASE_URL } from '@/configs/env.config';
-
-type Blogs = {
-	status: string;
-	data: Blog[];
-};
-
-type Blog = {
-	id: number;
-	title: string;
-	create_at: string;
-	Video: string;
-	article: number;
-};
+import type { Blog, Blogs } from '@/types/api.types';
 
 async function getBlogs(): Promise<Blog[]> {
 	const res = await fetch(`${BASE_URL}/api/blog`, {

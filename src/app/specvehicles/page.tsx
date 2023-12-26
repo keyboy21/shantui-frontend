@@ -1,7 +1,7 @@
 import { Heading } from '@/components/ui/Heading';
-import { Categories } from './_components/Categories';
+import { VehicleCategories } from './_components/Categories';
 
-const SpecVehicles = () => {
+const FactoriesPage = () => {
 	return (
 		<section>
 			<Heading
@@ -11,9 +11,9 @@ const SpecVehicles = () => {
 			>
 				Спецтехника
 			</Heading>
-			<Categories />
+			<VehicleCategories />
 		</section>
 	);
 };
 
-export default SpecVehicles;
+export default FactoriesPage;

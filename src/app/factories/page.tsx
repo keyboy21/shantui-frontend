@@ -3,19 +3,7 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { BASE_URL } from '@/configs/env.config';
 import { RouterConfig } from '@/configs/router.config';
-
-type Factories = {
-	status: string;
-	data: Factory[];
-};
-
-type Factory = {
-	id: number;
-	name: string;
-	description: string;
-	description_bot: string;
-	image: string;
-};
+import type { Factories, Factory } from '@/types/api.types';
 
 async function getFactories(): Promise<Factory[]> {
 	const res = await fetch(`${BASE_URL}/api/f`, {
@@ -29,7 +17,7 @@ async function getFactories(): Promise<Factory[]> {
 	return data.data;
 }
 
-const Factories = async () => {
+const FactoriesPage = async () => {
 	const factories = await getFactories();
 	return (
 		<section className="pb-24">
@@ -55,4 +43,4 @@ const Factories = async () => {
 	);
 };
 
-export default Factories;
+export default FactoriesPage;

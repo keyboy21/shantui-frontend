@@ -3,17 +3,8 @@ import { Container } from '@/components/ui/Container';
 import { LinkButton } from '@/components/ui/LinkButton';
 import { BASE_URL } from '@/configs/env.config';
 import { RouterConfig } from '@/configs/router.config';
+import type { Categories, Category } from '@/types/api.types';
 
-type Categories = {
-	status: string;
-	data: Category[];
-};
-
-type Category = {
-	id: number;
-	name: string;
-	image: string;
-};
 async function getCategories(): Promise<Category[]> {
 	const res = await fetch(`${BASE_URL}/api/stc`, {
 		next: { revalidate: 86400 },
