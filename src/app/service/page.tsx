@@ -6,7 +6,7 @@ import { VideoBlogs } from '@/app/projects/_sections/VideoBlogs';
 
 const ServicePage = () => {
 	return (
-		<section className='pb-24'>
+		<section className="pb-24">
 			<Heading
 				className="text-center text-shantuiblack mt-[150px] mb-14"
 				size="5xl"
