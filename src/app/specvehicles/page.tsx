@@ -1,30 +1,24 @@
 import { getBulldozerCategories } from '@/api/getBulldozerCategories.api';
-import { getBulldozers } from '@/api/getBulldozers.api';
 import { Heading } from '@/components/ui/Heading';
 import { Page } from '@/types/next.types';
+import type { Metadata } from 'next';
+import { Suspense } from 'react';
+import { BulldozerSkeleton } from './_components/BulldozerSkeleton';
 import { Bulldozers } from './_sections/Bulldozers';
 import { VehicleCategories } from './_sections/Categories';
 
-async function getVehiclesPageData() {
-	const [categories, bulldozers] = await Promise.all([
-		await getBulldozerCategories(),
-		await getBulldozers(),
-	]);
+export const metadata: Metadata = {
+	title: 'Спецтехника',
+};
 
-	return {
-		categories,
-		bulldozers,
-	};
+async function getCategories() {
+	const categories = await getBulldozerCategories();
+	return categories;
 }
 
 const SpecVehiclesPage: Page = async ({ searchParams }) => {
-	const { categories, bulldozers } = await getVehiclesPageData();
+	const categories = await getCategories();
 	const categoryId = searchParams.category ?? null;
-
-	const FilteredBulldozers =
-		categoryId === null
-			? bulldozers
-			: bulldozers.filter(({ category }) => category === +categoryId);
 
 	return (
 		<>
@@ -36,8 +30,12 @@ const SpecVehiclesPage: Page = async ({ searchParams }) => {
 				>
 					Спецтехника
 				</Heading>
-				<VehicleCategories categories={categories} />
-				<Bulldozers bulldozers={FilteredBulldozers} />
+				<VehicleCategories categories={categories} categoryId={categoryId} />
+			</section>
+			<section className="mb-24">
+				<Suspense fallback={<BulldozerSkeleton />}>
+					<Bulldozers categoryId={categoryId} />
+				</Suspense>
 			</section>
 		</>
 	);

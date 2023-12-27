@@ -3,6 +3,11 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Paragraph } from '@/components/ui/Paragraph';
 import { UseDialogProvider } from '@/contexts';
+import { Metadata } from 'next/types';
+
+export const metadata: Metadata = {
+	title: 'Контакты',
+};
 
 const ContactsPage = () => {
 	return (

@@ -5,7 +5,7 @@ export interface ParamsWithSlug {
 	slug?: string;
 }
 
-export type SearchParamsWithQuer = { [key: string]: string | string[] | undefined }
+export type SearchParamsWithQuer = { [key: string]: string | undefined };
 
 export type Page<
 	Params extends ParamsWithSlug = ParamsWithSlug,

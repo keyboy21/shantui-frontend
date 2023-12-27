@@ -5,6 +5,11 @@ import { BASE_URL } from '@/configs/env.config';
 import { RouterConfig } from '@/configs/router.config';
 import type { Factories, Factory } from '@/types/api.types';
 import { getBackendImage } from '@/utils/getBackendImage.util';
+import { Metadata } from 'next/types';
+
+export const metadata: Metadata = {
+	title: 'Заводы',
+};
 
 async function getFactories(): Promise<Factory[]> {
 	const res = await fetch(`${BASE_URL}/api/f`, {

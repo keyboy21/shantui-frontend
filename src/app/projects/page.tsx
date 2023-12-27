@@ -4,6 +4,11 @@ import HeadingImage from '../../../public/project.jpg';
 import NextImage from 'next/image';
 import { Paragraph } from '@/components/ui/Paragraph';
 import { VideoBlogs } from './_sections/VideoBlogs';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Проекты',
+};
 
 const ProjectsPage = () => {
 	return (
