@@ -1,8 +1,7 @@
 import { Heading } from '@/components/ui/Heading';
 import { LinkButton } from '@/components/ui/LinkButton';
-import { Vehicle } from '@/types/component.types';
+import { Vehicle } from '@/types/api.types';
 import { cn } from '@/utils/cn.util';
-import { getBackendImage } from '@/utils/getBackendImage.util';
 import NextImage from 'next/image';
 import type { FC } from 'react';
 
@@ -33,11 +32,10 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 			>
 				<NextImage
 					className={cn('object-center ', {
-						'object-contain group-hover:scale-110 group-hover:transition group-hover:ease-in-out group-hover:duration-500':
-							cardType === 'vehicle',
+						'object-contain': cardType === 'vehicle',
 						'object-cover rounded-md': cardType === 'factory',
 					})}
-					src={getBackendImage(image)}
+					src={image}
 					fill
 					alt="bulldozer"
 				/>

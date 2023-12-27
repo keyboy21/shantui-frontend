@@ -5,9 +5,11 @@ export interface ParamsWithSlug {
 	slug?: string;
 }
 
+export type SearchParamsWithQuer = { [key: string]: string | string[] | undefined }
+
 export type Page<
 	Params extends ParamsWithSlug = ParamsWithSlug,
-	SearchParams extends object = object,
+	SearchParams extends SearchParamsWithQuer = SearchParamsWithQuer,
 > = FC<{
 	params: Params;
 	searchParams: SearchParams;

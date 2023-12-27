@@ -36,3 +36,19 @@ export type Factory = {
 	description_bot: string;
 	image: string;
 };
+
+// Bulldozers
+export type Bulldozers = {
+	status: string;
+	data: Vehicle[];
+};
+
+export type Vehicle = {
+	id: number;
+	name: string;
+	image: string;
+	description: string;
+	category: number;
+	doc: string | null;
+	description_bot: string | null;
+};

@@ -4,6 +4,7 @@ import { LinkButton } from '@/components/ui/LinkButton';
 import { BASE_URL } from '@/configs/env.config';
 import { RouterConfig } from '@/configs/router.config';
 import type { Categories, Category } from '@/types/api.types';
+import { getBackendImage } from '@/utils/getBackendImage.util';
 
 async function getCategories(): Promise<Category[]> {
 	const res = await fetch(`${BASE_URL}/api/stc`, {
@@ -28,8 +29,8 @@ export const CategorySection = async () => {
 						{filteredData.map((category) => (
 							<BulldozerCard
 								key={category.id}
-								link={`${RouterConfig.SpecVehicles()}?id=${category.id}`}
-								image={category.image}
+								link={`${RouterConfig.SpecVehicles()}?category=${category.id}`}
+								image={getBackendImage(category.image)}
 								name={category.name}
 								buttonStyle="secondary"
 							/>

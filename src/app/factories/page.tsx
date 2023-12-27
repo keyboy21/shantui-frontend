@@ -4,6 +4,7 @@ import { Heading } from '@/components/ui/Heading';
 import { BASE_URL } from '@/configs/env.config';
 import { RouterConfig } from '@/configs/router.config';
 import type { Factories, Factory } from '@/types/api.types';
+import { getBackendImage } from '@/utils/getBackendImage.util';
 
 async function getFactories(): Promise<Factory[]> {
 	const res = await fetch(`${BASE_URL}/api/f`, {
@@ -34,7 +35,7 @@ const FactoriesPage = async () => {
 						key={id}
 						cardType="factory"
 						link={RouterConfig.Factories(id)}
-						image={image}
+						image={getBackendImage(image)}
 						name={name}
 					/>
 				))}
