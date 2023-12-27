@@ -44,7 +44,7 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 				<Heading
 					as="h3"
 					className={cn('text-balance mb-5', {
-						'font-bold text-2xl': cardType === 'vehicle',
+						'font-bold text-xl xl:text-2xl': cardType === 'vehicle',
 						'font-medium text-lg': cardType === 'factory',
 					})}
 				>

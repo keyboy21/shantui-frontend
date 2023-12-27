@@ -34,7 +34,11 @@ const ProjectsPage = () => {
 				>
 					SHANTUI
 				</Heading>
-				<Paragraph size="xl" weight="normal" className="mb-4 text-pretty">
+				<Paragraph
+					size="lg"
+					weight="normal"
+					className="mb-4 text-pretty 2xl:text-xl"
+				>
 					Мы имеем 20 летний опыт поставки качественной спецтехники в страны
 					СНГ. Мы реализовали более 70 проектов в России, Казахстане, Киргизии и
 					Таджикистане. Мы сотрудничаем с более чем 30 заводами поставщиками
@@ -47,7 +51,11 @@ const ProjectsPage = () => {
 					Китая, производственная мощь которых составляет не менее 1000 единиц
 					производимой продукции в месяц.
 				</Paragraph>
-				<Paragraph size="xl" weight="normal" className="mb-4 text-pretty">
+				<Paragraph
+					size="lg"
+					weight="normal"
+					className="mb-4 text-pretty 2xl:text-xl"
+				>
 					При плановом техническом обслуживании и ремонте спецтехники поможет
 					наш собственный сервисный центр и магазин оригинальных запчастей.
 					Покупайте спецтехнику у официального дилера #SHANTUI в Узбекистане STT

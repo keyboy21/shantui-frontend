@@ -26,7 +26,7 @@ export const VideoCard: FC<VideoCardProps> = ({ title, url, date }) => {
 			>
 				{title}
 			</Heading>
-			<div className="*:text-sm flex justify-between px-4 *:text-gray-400 mt-auto">
+			<div className="*:text-sm flex justify-between px-4 *:text-gray-600 mt-auto">
 				<time dateTime={date}>{date.substring(0, 10)}</time>
 				<a href={url} target="_blank" rel="noreferrer">
 					Подробнее

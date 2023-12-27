@@ -151,7 +151,7 @@ export const Footer = () => {
 								href="mailto:spestexnikatashkent@gmail.com"
 								rel="noreferrer"
 								target="_blank"
-								className="text-base lg:text-sm xl:text-base text-balance"
+								className="text-sm lg:text-sm xl:text-base text-balance"
 							>
 								spestexnikatashkent@gmail.com
 							</a>

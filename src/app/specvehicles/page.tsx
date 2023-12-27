@@ -24,8 +24,8 @@ const SpecVehiclesPage: Page = async ({ searchParams }) => {
 		<>
 			<section>
 				<Heading
-					className="text-center text-shantuiblack mt-[150px] mb-14"
-					size="5xl"
+					className="text-center text-shantuiblack mt-[150px] mb-14 2xl:text-5xl"
+					size="3xl"
 					weight="bold"
 				>
 					Спецтехника
