@@ -2,7 +2,7 @@ import { ContactForm } from '@/components/forms/Contact';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Paragraph } from '@/components/ui/Paragraph';
-import { UseDialogProvider } from '@/contexts';
+import { DialogProvider } from '@/contexts';
 import { Metadata } from 'next/types';
 
 export const metadata: Metadata = {
@@ -32,9 +32,9 @@ const ContactsPage = () => {
 					<Paragraph size="lg" className="text-center text-gray-600 mb-5">
 						Наши менеджеры свяжитесь с Вами в течении 5 минут!
 					</Paragraph>
-					<UseDialogProvider>
+					<DialogProvider>
 						<ContactForm />
-					</UseDialogProvider>
+					</DialogProvider>
 				</div>
 			</Container>
 		</section>

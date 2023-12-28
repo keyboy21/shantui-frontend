@@ -1,18 +1,16 @@
 'use client';
-import type { FC } from 'react';
-import { createContext, useContext } from 'react';
 import {
-	AlertDialog,
-	AlertDialogAction,
-	AlertDialogCancel,
-	AlertDialogContent,
-	AlertDialogDescription,
-	AlertDialogFooter,
-	AlertDialogHeader,
-	AlertDialogTitle,
-	AlertDialogTrigger,
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
 } from '@/components/feedback/AlertDialog';
 import { useDialog } from '@/hooks';
+import type { FC } from 'react';
+import { createContext, useContext } from 'react';
 
 interface useDialogContext {
 	openDialog: () => void;
@@ -31,7 +29,7 @@ const useDialogContext = createContext<useDialogContext>(
 );
 export const useDialogData = () => useContext(useDialogContext);
 
-export const UseDialogProvider: FC<DialogProviderProps> = ({ children }) => {
+export const DialogProvider: FC<DialogProviderProps> = ({ children }) => {
 	const {
 		openDialog,
 		closeDialog,

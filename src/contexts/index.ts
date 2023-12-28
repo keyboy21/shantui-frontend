@@ -1,1 +1,1 @@
-export { useDialogData, UseDialogProvider } from './use-dialog';
+export { useDialogData, DialogProvider } from './use-alert-dialog';

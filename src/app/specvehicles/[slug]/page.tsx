@@ -1,7 +1,7 @@
 import { getBulldozer } from '@/api/getBulldozers.api';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
-import { UseDialogProvider } from '@/contexts';
+import { DialogProvider } from '@/contexts';
 import { DynamicMetadata, Page } from '@/types/next.types';
 import Markdown from 'markdown-to-jsx';
 import NextImage from 'next/image';
@@ -65,7 +65,9 @@ const VehiclePage: Page = async ({ params }) => {
 								Скачать брошюру
 							</a>
 						)}
-						<DialogForm bulldozerName={bulldozer.name} />
+						<DialogProvider>
+							<DialogForm bulldozerName={bulldozer.name} />
+						</DialogProvider>
 					</div>
 					<hr />
 					<div className="xl:mx-20 py-10">
