@@ -15,7 +15,7 @@ import Picture4 from '../../../../public/Carousel/sayt4.webp';
 
 export const CarouselSection = () => {
 	return (
-		<section className="mt-[100px] hidden md:block">
+		<section className="mt-[100px]">
 			<Carousel
 				opts={{
 					dragFree: false,
@@ -39,7 +39,7 @@ export const CarouselSection = () => {
 						/>
 					</CarouselItem>
 					<CarouselItem>
-						<NextImage className="w-full" src={Picture1} alt="bulldozer" />
+						<NextImage className="w-full" priority src={Picture1} alt="bulldozer" />
 					</CarouselItem>
 					<CarouselItem>
 						<NextImage className="w-full" src={Picture2} alt="bulldozer" />

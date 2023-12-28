@@ -4,6 +4,7 @@ import '@/styles/globals.css';
 import { LayoutComponent } from '@/types/next.types';
 import { cn } from '@/utils/cn.util';
 import { Montserrat } from 'next/font/google';
+import Script from 'next/script';
 const montserrat = Montserrat({ subsets: ['cyrillic'] });
 
 const RootLayout: LayoutComponent = async ({ children }) => {
@@ -30,6 +31,16 @@ const RootLayout: LayoutComponent = async ({ children }) => {
 				<Header />
 				<main>{children}</main>
 				<Footer />
+				{/* <Script id="yandex-analytics" strategy="afterInteractive">
+					{`(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+                ym(88026506, "init", {
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true
+                });`}
+				</Script> */}
 			</body>
 		</html>
 	);

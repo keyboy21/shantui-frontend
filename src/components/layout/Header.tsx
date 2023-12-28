@@ -17,7 +17,7 @@ export const Header = () => {
 		<header className="fixed bg-white w-full z-10 top-0 shadow-md shadow-gray-200">
 			<Container className="flex justify-between py-5 items-center">
 				<Link href={'/'}>
-					<NextImage src={Logo} alt="logo" />
+					<NextImage src={Logo} alt="logo" priority />
 				</Link>
 				<div className="hidden lg:flex gap-x-4 items-center">
 					<nav>
@@ -51,9 +51,9 @@ export const Header = () => {
 					{/* Mobile navigation*/}
 					<Trigger className="flex cursor-default items-center">
 						{open ? (
-							<Cross1Icon className="size-8" />
+							<Cross1Icon aria-label="open-menu" className="size-8" />
 						) : (
-							<TextAlignJustifyIcon className="size-8" />
+							<TextAlignJustifyIcon aria-label="close-menu" className="size-8" />
 						)}
 					</Trigger>
 					<Content className="absolute z-10 left-0 top-[100px] h-full w-full bg-white">

@@ -71,7 +71,7 @@ const VehiclePage: Page = async ({ params }) => {
 					</div>
 					<hr />
 					<div className="xl:mx-20 py-10">
-						<Markdown className="prose prose-sm contents 2xl:prose-lg">
+						<Markdown options={{wrapper:'article'}} className="prose prose-sm contents 2xl:prose-lg">
 							{bulldozer.description}
 						</Markdown>
 					</div>

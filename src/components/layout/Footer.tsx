@@ -123,7 +123,7 @@ export const Footer = () => {
 										href="tel:+99897 007 08 10"
 										rel="noreferrer"
 										target="_blank"
-										className="text-base"
+										className="text-lg"
 									>
 										+99897 007 08 10
 									</a>
@@ -133,7 +133,7 @@ export const Footer = () => {
 										href="tel:+99897 007 08 20"
 										rel="noreferrer"
 										target="_blank"
-										className="text-base"
+										className="text-lg"
 									>
 										+99897 007 08 20
 									</a>
