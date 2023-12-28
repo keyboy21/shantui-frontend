@@ -11,7 +11,7 @@ import {
 	AlertDialogHeader,
 	AlertDialogTitle,
 	AlertDialogTrigger,
-} from '@/components/feedback/Dialog';
+} from '@/components/feedback/AlertDialog';
 import { useDialog } from '@/hooks';
 
 interface useDialogContext {

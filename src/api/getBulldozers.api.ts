@@ -18,7 +18,7 @@ export async function getBulldozer(id: string): Promise<Vehicle> {
 		next: { revalidate: 86400 },
 	});
 	if (!res.ok) {
-		throw new Error('Failed to fetch data')
+		throw new Error('Failed to fetch data');
 	}
 
 	const data: Vehicle = await res.json();

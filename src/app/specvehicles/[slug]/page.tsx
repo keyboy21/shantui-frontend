@@ -6,6 +6,7 @@ import { DynamicMetadata, Page } from '@/types/next.types';
 import Markdown from 'markdown-to-jsx';
 import NextImage from 'next/image';
 import { notFound } from 'next/navigation';
+import { DialogForm } from './_components/DialogForm';
 
 export const generateMetadata: DynamicMetadata = async ({ params }) => {
 	const { slug } = params;
@@ -64,14 +65,7 @@ const VehiclePage: Page = async ({ params }) => {
 								Скачать брошюру
 							</a>
 						)}
-						<UseDialogProvider>
-							<button
-								type="button"
-								className="text-primary font-medium underline text-base"
-							>
-								Оставить заявку на эту технику
-							</button>
-						</UseDialogProvider>
+						<DialogForm bulldozerName={bulldozer.name} />
 					</div>
 					<hr />
 					<div className="xl:mx-20 py-10">

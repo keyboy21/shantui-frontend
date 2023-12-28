@@ -1,6 +1,6 @@
 'use client';
 import { sendContactMessage } from '@/actions/sendContactMessage';
-import { BaseInput } from '@/components/inputs/BaseInput';
+import { Input } from '@/components/inputs/Input';
 import { TextArea } from '@/components/inputs/TextArea';
 import { useDialogData } from '@/contexts';
 import { useRef } from 'react';
@@ -25,7 +25,7 @@ export const ContactForm = () => {
 	return (
 		<form action={onSubmit} ref={formRef} className="flex flex-col">
 			<div className="flex flex-col md:flex-row md:justify-between gap-6">
-				<BaseInput
+				<Input
 					autoComplete="name"
 					className="w-full"
 					required={true}
@@ -34,7 +34,7 @@ export const ContactForm = () => {
 					type="text"
 					name="name"
 				/>
-				<BaseInput
+				<Input
 					placeholder="998931234567"
 					autoComplete="tel"
 					required={true}
@@ -45,7 +45,7 @@ export const ContactForm = () => {
 					name="phone"
 				/>
 			</div>
-			<BaseInput
+			<Input
 				placeholder="example@gmail.com"
 				autoComplete="email"
 				required={true}

@@ -1,7 +1,7 @@
 import { cn } from '@/utils/cn.util';
 import { ComponentPropsWithoutRef, FC } from 'react';
 
-export const BaseInput: FC<BaseInputProps> = ({
+export const Input: FC<InputProps> = ({
 	className,
 	id,
 	name,
@@ -33,7 +33,7 @@ export const BaseInput: FC<BaseInputProps> = ({
 	);
 };
 
-type BaseInputProps = ComponentPropsWithoutRef<'input'> & {
+type InputProps = ComponentPropsWithoutRef<'input'> & {
 	label: string;
 	labelClassName?: string;
 	required?: boolean;
