@@ -2,13 +2,28 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { BASE_URL } from '@/configs/env.config';
 import type { Factory } from '@/types/api.types';
-import { Page } from '@/types/next.types';
+import type { DynamicMetadata, Page } from '@/types/next.types';
 import { getBackendImage } from '@/utils/getBackendImage.util';
 import Markdown from 'markdown-to-jsx';
 import NextImage from 'next/image';
 import { notFound } from 'next/navigation';
 
-type ResFactories = {
+export const generateMetadata: DynamicMetadata = async ({ params }) => {
+	const { slug } = params;
+
+	if (!slug) {
+		notFound();
+	}
+
+	const res = await fetch(`${BASE_URL}/api/f/${slug}`);
+
+	const data: ResFactory = await res.json();
+	return {
+		title: data.data.name,
+	};
+};
+
+type ResFactory = {
 	status: string;
 	data: Factory;
 };
@@ -21,7 +36,7 @@ async function getFactory(slug: string): Promise<Factory> {
 		notFound();
 	}
 
-	const data: ResFactories = await res.json();
+	const data: ResFactory = await res.json();
 	return data.data;
 }
 
