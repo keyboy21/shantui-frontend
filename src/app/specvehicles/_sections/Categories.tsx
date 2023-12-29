@@ -30,12 +30,12 @@ export const VehicleCategories: FC<VehicleCategoriesProps> = ({
 	return (
 		<Container className="mb-10">
 			<div className="bg-white shadow-sm p-5 md:py-10 md:px-14 rounded-sm">
-				<ul className="grid grid-cols-2 xl:grid-cols-3 gap-5">
+				<ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
 					{withAll.map(({ name, id }) => (
 						<li
 							onClick={() => filterBulldozers(id)}
 							className={cn(
-								'text-sm w-fit md:text-lg font-medium text-[#828282] cursor-pointer',
+								'text-base w-fit md:text-lg font-medium text-[#828282] cursor-pointer',
 								{
 									'text-primary': categoryId && id === +categoryId,
 								},
