@@ -24,7 +24,7 @@ export const CategorySection = async () => {
 	return (
 		<>
 			{filteredData.length > 0 ? (
-				<section className="mt-16">
+				<section className="mt-[140px] lg:mt-16">
 					<Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7">
 						{filteredData.map((category) => (
 							<BulldozerCard
