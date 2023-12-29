@@ -6,13 +6,15 @@ import { DynamicMetadata, Page } from '@/types/next.types';
 import Markdown from 'markdown-to-jsx';
 import NextImage from 'next/image';
 import { notFound } from 'next/navigation';
-import { DialogForm } from './_components/DialogForm';
+import { DialogForm } from '@/components/forms';
 
 export const generateMetadata: DynamicMetadata = async ({ params }) => {
 	const { slug } = params;
 
 	if (!slug) {
-		notFound();
+		return {
+			title: 'Ничего нет',
+		};
 	}
 
 	const response = await getBulldozer(slug);
@@ -66,12 +68,15 @@ const VehiclePage: Page = async ({ params }) => {
 							</a>
 						)}
 						<DialogProvider>
-							<DialogForm bulldozerName={bulldozer.name} />
+							<DialogForm productName={bulldozer.name} />
 						</DialogProvider>
 					</div>
 					<hr />
 					<div className="xl:mx-20 py-10">
-						<Markdown options={{wrapper:'article'}} className="prose prose-sm contents 2xl:prose-lg">
+						<Markdown
+							options={{ wrapper: 'article' }}
+							className="prose prose-sm contents 2xl:prose-lg"
+						>
 							{bulldozer.description}
 						</Markdown>
 					</div>

@@ -1,6 +1,8 @@
+import { DialogForm } from '@/components/forms';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { BASE_URL } from '@/configs/env.config';
+import { DialogProvider } from '@/contexts';
 import type { Factory } from '@/types/api.types';
 import type { DynamicMetadata, Page } from '@/types/next.types';
 import { getBackendImage } from '@/utils/getBackendImage.util';
@@ -12,7 +14,9 @@ export const generateMetadata: DynamicMetadata = async ({ params }) => {
 	const { slug } = params;
 
 	if (!slug) {
-		notFound();
+		return {
+			title: 'Ничего нет',
+		};
 	}
 
 	const res = await fetch(`${BASE_URL}/api/f/${slug}`);
@@ -67,6 +71,10 @@ const FactoryPage: Page = async ({ params }) => {
 			</Container>
 			<Container>
 				<div className="bg-white shadow-xl my-10 p-10 rounded-lg xl:mx-24">
+					<DialogProvider>
+						<DialogForm productName={factory.name} />
+					</DialogProvider>
+					<hr className="my-10" />
 					<Markdown
 						options={{ wrapper: 'article' }}
 						className="prose prose-sm contents 2xl:prose-base"

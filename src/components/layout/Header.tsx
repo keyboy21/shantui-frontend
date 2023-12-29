@@ -53,7 +53,10 @@ export const Header = () => {
 						{open ? (
 							<Cross1Icon aria-label="open-menu" className="size-8" />
 						) : (
-							<TextAlignJustifyIcon aria-label="close-menu" className="size-8" />
+							<TextAlignJustifyIcon
+								aria-label="close-menu"
+								className="size-8"
+							/>
 						)}
 					</Trigger>
 					<Content className="absolute z-10 left-0 top-[100px] h-full w-full bg-white">

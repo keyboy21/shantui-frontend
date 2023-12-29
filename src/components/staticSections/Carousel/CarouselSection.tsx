@@ -39,7 +39,12 @@ export const CarouselSection = () => {
 						/>
 					</CarouselItem>
 					<CarouselItem>
-						<NextImage className="w-full" priority src={Picture1} alt="bulldozer" />
+						<NextImage
+							className="w-full"
+							priority
+							src={Picture1}
+							alt="bulldozer"
+						/>
 					</CarouselItem>
 					<CarouselItem>
 						<NextImage className="w-full" src={Picture2} alt="bulldozer" />

@@ -34,7 +34,7 @@ const FactoriesPage = async () => {
 			>
 				Заводы
 			</Heading>
-			<Container className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-7">
+			<Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
 				{factories.map(({ name, image, id }) => (
 					<BulldozerCard
 						key={id}

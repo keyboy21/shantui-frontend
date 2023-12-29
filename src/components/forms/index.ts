@@ -1,1 +1,2 @@
-export { ContactForm } from './Contact';
+export { ContactForm } from './ContactForm';
+export { DialogForm } from './DialogForm';

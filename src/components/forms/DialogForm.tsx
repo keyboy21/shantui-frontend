@@ -12,14 +12,14 @@ import { Button } from '@/components/ui/Button';
 import { useDialogData } from '@/contexts';
 import { useRef } from 'react';
 
-export const DialogForm = ({ bulldozerName }: { bulldozerName: string }) => {
+export const DialogForm = ({ productName }: { productName: string }) => {
 	// ==== Dialog Context ==== //
 	const { openSuccesDialog, openErrorDialog } = useDialogData();
 
 	const formRef = useRef<null | HTMLFormElement>(null);
 	const onSend = async (formData: FormData) => {
 		formRef.current?.reset();
-		const response = await sendApplication(formData, bulldozerName);
+		const response = await sendApplication(formData, productName);
 		if (response.ok) {
 			openSuccesDialog();
 		} else {

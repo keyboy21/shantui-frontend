@@ -1,39 +1,45 @@
 'use server';
 
-export const sendApplication = async (formData: FormData, bulldozername: string) => {
-    const rawFormData = {
-        name: formData.get('name') as string | null,
-        phone: formData.get('phone') as string | null,
-    };
+export const sendApplication = async (
+	formData: FormData,
+	bulldozername: string,
+) => {
+	const rawFormData = {
+		name: formData.get('name') as string | null,
+		phone: formData.get('phone') as string | null,
+	};
 
-    if (
-        rawFormData.name === null ||
-        rawFormData.phone === null ||
-        bulldozername === null
-    ) {
-        return {
-            ok: true,
-            message: 'Сообщение не отправлено',
-        };
-    }
+	if (
+		rawFormData.name === null ||
+		rawFormData.phone === null ||
+		bulldozername === null
+	) {
+		return {
+			ok: false,
+			message: 'Некоторые данные не заполнены',
+		};
+	}
 
-    console.log(rawFormData)
-    console.log(bulldozername)
+	const Message = `Спец Техники 🚜🌐%0AМарка:${bulldozername}%0A👤Имя:${rawFormData.name}%0A📞Номер телефон:${rawFormData.phone}`;
 
-    // const res = await fetch(`${BASE_URL}/api/contact/`, {
-    //     method: 'post',
-    //     body: formData,
-    // });
+	console.log(Message);
 
-    // if (!res.ok) {
-    //     return {
-    //         ok: false,
-    //         message: 'Сообщение не отправлено',
-    //     };
-    // }
+	const res = await fetch(
+		`https://api.telegram.org/bot5032490328:AAF_lcDsbBYsrrbB5mCQgO-_ivdBAjWZ5ms/sendMessage?chat_id=@ShantuiReferencesChannel&text=${Message}`,
+		{
+			method: 'post',
+		},
+	);
 
-    return {
-        ok: true,
-        message: 'Сообщение отправлено',
-    };
+	if (!res.ok) {
+		return {
+			ok: false,
+			message: 'Сообщение не отправлено',
+		};
+	}
+
+	return {
+		ok: true,
+		message: 'Сообщение отправлено',
+	};
 };
