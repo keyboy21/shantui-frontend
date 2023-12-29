@@ -15,7 +15,7 @@ import Picture4 from '../../../../public/Carousel/sayt4.webp';
 
 export const CarouselSection = () => {
 	return (
-		<section className="mt-[100px]">
+		<section className="lg:mt-[100px] hidden lg:block">
 			<Carousel
 				opts={{
 					dragFree: false,
