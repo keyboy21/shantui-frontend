@@ -20,7 +20,7 @@ export const VehicleCategories: FC<VehicleCategoriesProps> = ({
 			});
 		} else {
 			startTransition(() => {
-				router.push(`${RouterConfig.SpecVehicles()}?category=${id}`);
+				router.replace(`${RouterConfig.SpecVehicles()}?category=${id}`);
 			});
 		}
 	};
