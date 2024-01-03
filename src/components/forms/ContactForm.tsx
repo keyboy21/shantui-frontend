@@ -40,7 +40,7 @@ export const ContactForm = () => {
 					required={true}
 					label="Телефон"
 					id="phone"
-					type="number"
+					type="tel"
 					pattern="[0-9]"
 					name="phone"
 				/>

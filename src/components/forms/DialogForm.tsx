@@ -51,7 +51,8 @@ export const DialogForm = ({ productName }: { productName: string }) => {
 					/>
 					<Input
 						required={true}
-						type="number"
+						type="tel"
+						placeholder="998931234567"
 						label="Телефон"
 						name="phone"
 						id="phone"

@@ -31,9 +31,10 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 				})}
 			>
 				<NextImage
-					className={cn('object-center ', {
-						'object-contain': cardType === 'vehicle',
-						'object-cover rounded-md': cardType === 'factory',
+					className={cn('object-center', {
+						'object-contain group-hover:scale-110 transition-transform duration-200':
+							cardType === 'vehicle',
+						'object-cover rounded-md object-center': cardType === 'factory',
 					})}
 					src={image}
 					fill
@@ -61,6 +62,6 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 type BulldozerCardProps = Pick<Vehicle, 'name' | 'image'> & {
 	className?: string;
 	buttonStyle?: 'primary' | 'secondary';
-	cardType?: 'vehicle' | 'factory';
+	cardType?: 'vehicle' | 'factory' | 'category';
 	link: string;
 };

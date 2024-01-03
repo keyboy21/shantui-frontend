@@ -8,6 +8,7 @@ import type { Page } from '@/types/next.types';
 import type { Metadata } from 'next/types';
 import { CategorySection } from './_sections/CategorySection';
 import { VideoBlogsSection } from './_sections/VideoBlogsSection';
+import { SocialLinks } from '@/components/ui/SocialLinks';
 
 export const metadata: Metadata = {
 	title: 'Главная',
@@ -16,6 +17,8 @@ export const metadata: Metadata = {
 const HomePage: Page = async () => {
 	return (
 		<>
+			{/* Fixed Social Links */}
+			<SocialLinks />
 			{/* Carousel */}
 			<CarouselSection />
 			{/* Categories */}
