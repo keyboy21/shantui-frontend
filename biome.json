@@ -7,11 +7,11 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
-			"a11y":{
-				"useKeyWithClickEvents":"off"
+			"a11y": {
+				"useKeyWithClickEvents": "off"
 			}
 		},
-		"ignore": [".next"]
+		"ignore": [".next", "node_modules"]
 	},
 	"javascript": {
 		"formatter": {
@@ -20,6 +20,6 @@
 		}
 	},
 	"formatter": {
-		"ignore": [".next"]
+		"ignore": [".next", "node_modules"]
 	}
 }

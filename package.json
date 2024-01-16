@@ -8,10 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint:next": "next lint",
-    "lint": "npx @biomejs/biome lint ./src",
+    "lint": "npx @biomejs/biome lint ./",
     "check-types": "npx tsc --pretty --noEmit",
-    "format:check": "npx @biomejs/biome check ./src",
-    "format": "npx @biomejs/biome format --write ./src"
+    "format:check": "npx @biomejs/biome check ./",
+    "format": "npx @biomejs/biome format --write ./"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.5",
