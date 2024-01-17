@@ -34,7 +34,7 @@ export const CarouselSection = () => {
 							loading="lazy"
 							width={'100%'}
 							height={'100%'}
-							src="https://www.youtube.com/embed/TJX-f4TZiAw?autoplay=1&mute=1&loop=1"
+							src="https://www.youtube.com/embed/TJX-f4TZiAw?autoplay=0&mute=1&loop=1"
 							title="youtube"
 						/>
 					</CarouselItem>

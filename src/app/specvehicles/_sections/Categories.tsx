@@ -13,19 +13,19 @@ export const VehicleCategories: FC<VehicleCategoriesProps> = ({
 }) => {
 	const router = useRouter();
 
-	const filterBulldozers = (id: number) => {
-		if (id === categories.length + 1) {
+	const filterBulldozers = (id: number | null) => {
+		if (id) {
 			startTransition(() => {
-				router.push(RouterConfig.SpecVehicles());
+				router.replace(`${RouterConfig.SpecVehicles()}?category=${id}`);
 			});
 		} else {
 			startTransition(() => {
-				router.replace(`${RouterConfig.SpecVehicles()}?category=${id}`);
+				router.push(RouterConfig.SpecVehicles());
 			});
 		}
 	};
 
-	const withAll = [{ name: 'Все', id: categories.length + 1 }, ...categories];
+	const withAll = [{ name: 'Все', id: null }, ...categories];
 
 	return (
 		<Container className="mb-10">
