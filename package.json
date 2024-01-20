@@ -20,24 +20,24 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@tailwindcss/typography": "^0.5.10",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.0.0",
-    "embla-carousel-autoplay": "^8.0.0-rc17",
-    "embla-carousel-react": "^8.0.0-rc17",
-    "markdown-to-jsx": "^7.3.2",
-    "next": "14.0.4",
+    "clsx": "^2.1.0",
+    "embla-carousel-autoplay": "^8.0.0-rc19",
+    "embla-carousel-react": "^8.0.0-rc19",
+    "markdown-to-jsx": "^7.4.0",
+    "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^2.2.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.4.1",
+    "@biomejs/biome": "^1.5.2",
     "@tailwindcss/forms": "^0.5.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.4.17",
     "postcss": "^8",
-    "tailwindcss": "^3.4.0",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
 }

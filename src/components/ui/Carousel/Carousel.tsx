@@ -1,19 +1,21 @@
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons';
-import useEmblaCarousel, {
-	type EmblaCarouselType as CarouselApi,
-	type EmblaOptionsType as CarouselOptions,
-	type EmblaPluginType as CarouselPlugin,
-} from 'embla-carousel-react';
+import useEmblaCarousel from 'embla-carousel-react';
+import {
+	EmblaOptionsType,
+	EmblaPluginType,
+	EmblaEventType,
+	EmblaCarouselType,
+} from 'embla-carousel';
 import * as React from 'react';
 
 import { Button } from '@/components/ui/Button';
 import { cn } from '@/utils/cn.util';
 
 type CarouselProps = {
-	opts?: CarouselOptions;
-	plugins?: CarouselPlugin[];
+	opts?: EmblaOptionsType;
+	plugins?: EmblaPluginType[];
 	orientation?: 'horizontal' | 'vertical';
-	setApi?: (api: CarouselApi) => void;
+	setApi?: (api: EmblaCarouselType) => void;
 };
 
 type CarouselContextProps = {
@@ -63,8 +65,7 @@ const Carousel = React.forwardRef<
 		const [canScrollPrev, setCanScrollPrev] = React.useState(false);
 		const [canScrollNext, setCanScrollNext] = React.useState(false);
 
-		// biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
-const  onSelect = React.useCallback((api: CarouselApi) => {
+		const onSelect = React.useCallback((api: EmblaCarouselType) => {
 			if (!api) {
 				return;
 			}
@@ -208,7 +209,7 @@ const CarouselPrevious = React.forwardRef<
 					: '-top-12 left-1/2 -translate-x-1/2 rotate-90',
 				className,
 			)}
-			// disabled={!canScrollPrev}
+			disabled={!canScrollPrev}
 			onClick={scrollPrev}
 			{...props}
 		>
@@ -249,7 +250,7 @@ const CarouselNext = React.forwardRef<
 CarouselNext.displayName = 'CarouselNext';
 
 export {
-	type CarouselApi,
+	type EmblaCarouselType,
 	Carousel,
 	CarouselContent,
 	CarouselItem,
