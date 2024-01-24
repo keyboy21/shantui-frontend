@@ -10,6 +10,8 @@ import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Logo from '../../../public/logo.svg';
 
+
+
 export const Header = () => {
 	const [open, setOpen] = useState(false);
 	const pathname = usePathname();
