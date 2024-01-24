@@ -10,7 +10,6 @@ async function getCategories(): Promise<Category[]> {
 	const res = await fetch(`${BASE_URL}/api/stc`, {
 		next: { revalidate: 86400 },
 	});
-	console.log(res)
 	if (!res.ok) {
 		return [];
 	}
