@@ -18,7 +18,7 @@ async function getBlogs(): Promise<Blog[]> {
 
 export const VideoBlogsSection = async () => {
 	const blogs = await getBlogs();
-	const filteredData = blogs.filter((_, index) => index < 4);
+	
 	return (
 		<>
 			{filteredData.length > 0 ? (
@@ -32,7 +32,7 @@ export const VideoBlogsSection = async () => {
 						Наши видеоматериалы
 					</Heading>
 					<Container className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-						{filteredData.map(({ create_at, title, Video, id }) => (
+						{blogs.map(({ create_at, title, Video, id }) => (
 							<VideoCard key={id} date={create_at} title={title} url={Video} />
 						))}
 					</Container>
