@@ -21,7 +21,7 @@ export const VideoBlogsSection = async () => {
 	
 	return (
 		<>
-			{filteredData.length > 0 ? (
+			{blogs.length > 0 ? (
 				<section className="mt-24">
 					<Heading
 						as="h2"
