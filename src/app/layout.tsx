@@ -3,9 +3,19 @@ import { Header } from '@/components/layout/Header';
 import '@/styles/globals.css';
 import { LayoutComponent } from '@/types/next.types';
 import { cn } from '@/utils/cn.util';
+import { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import Script from 'next/script';
 const montserrat = Montserrat({ subsets: ['cyrillic'] });
+
+export const metadata: Metadata = {
+	openGraph: {
+		title: 'Shantui',
+	},
+	twitter: {
+		card: 'summary_large_image',
+	},
+};
 
 const RootLayout: LayoutComponent = async ({ children }) => {
 	return (
