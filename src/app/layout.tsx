@@ -9,6 +9,7 @@ import Script from 'next/script';
 const montserrat = Montserrat({ subsets: ['cyrillic'] });
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://shantuiuzb.com'),
 	openGraph: {
 		title: 'Shantui',
 	},
