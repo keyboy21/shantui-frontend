@@ -21,10 +21,8 @@ export const generateMetadata: DynamicMetadata = async ({ params }) => {
 
 	return {
 		title: response.name,
-		description: response.description,
 		openGraph: {
 			title: response.name,
-			description: response.description,
 			images: response.image,
 		},
 	};
