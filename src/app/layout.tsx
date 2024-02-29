@@ -32,6 +32,11 @@ const RootLayout: LayoutComponent = async ({ children }) => {
 					name="keywords"
 					content="Shantui, Автобетоносмесители,Самосвалы,Фронтальные погрузчики, Автогрейдеры,Колесные экскаваторы,Башенные краны,Компакторы,Кирпичные линии,Мельницы дробления минерального порошка, Карьерные самосвалы"
 				/>
+				<meta property="og:image" content="<generated>" />
+				<meta property="og:image:type" content="<generated>" />
+				<meta property="og:image:width" content="<generated>" />
+				<meta property="og:image:height" content="<generated>" />
+
 			</head>
 			<body
 				className={cn(
