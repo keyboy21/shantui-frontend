@@ -18,7 +18,7 @@ async function getBlogs(): Promise<Blog[]> {
 
 export const VideoBlogsSection = async () => {
 	const blogs = await getBlogs();
-	
+
 	return (
 		<>
 			{blogs.length > 0 ? (
