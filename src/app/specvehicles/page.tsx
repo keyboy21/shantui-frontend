@@ -1,6 +1,6 @@
 import { getBulldozerCategories } from '@/api/getBulldozerCategories.api';
 import { Heading } from '@/components/ui/Heading';
-import { Page } from '@/types/next.types';
+import type { Page } from '@/types/next.types';
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { BulldozerSkeleton } from './_components/BulldozerSkeleton';
