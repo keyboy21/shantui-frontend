@@ -7,9 +7,7 @@ import type { Categories, Category } from '@/types/api.types';
 import { getBackendImage } from '@/utils/getBackendImage.util';
 
 async function getCategories(): Promise<Category[]> {
-	const res = await fetch(`${BASE_URL}/api/stc`, {
-		next: { revalidate: 86400 },
-	});
+	const res = await fetch(`${BASE_URL}/api/stc`);
 	if (!res.ok) {
 		return [];
 	}
