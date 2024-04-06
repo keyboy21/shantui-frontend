@@ -5,9 +5,7 @@ import { BASE_URL } from '@/configs/env.config';
 import type { Blog, Blogs } from '@/types/api.types';
 
 async function getBlogs(): Promise<Blog[]> {
-	const res = await fetch(`${BASE_URL}/api/blog`, {
-		next: { revalidate: 86400 },
-	});
+	const res = await fetch(`${BASE_URL}/api/blog`);
 	if (!res.ok) {
 		return [];
 	}
