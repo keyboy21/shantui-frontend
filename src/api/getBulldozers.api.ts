@@ -2,9 +2,7 @@ import { BASE_URL } from '@/configs/env.config';
 import { Vehicle } from '@/types/api.types';
 
 export async function getBulldozers(): Promise<Vehicle[]> {
-	const res = await fetch(`${BASE_URL}/api/st/`, {
-		next: { revalidate: 86400 },
-	});
+	const res = await fetch(`${BASE_URL}/api/st/`);
 	if (!res.ok) {
 		return [];
 	}
@@ -14,9 +12,7 @@ export async function getBulldozers(): Promise<Vehicle[]> {
 }
 
 export async function getBulldozer(id: string): Promise<Vehicle> {
-	const res = await fetch(`${BASE_URL}/api/st/${id}`, {
-		next: { revalidate: 86400 },
-	});
+	const res = await fetch(`${BASE_URL}/api/st/${id}`);
 	if (!res.ok) {
 		throw new Error('Failed to fetch data');
 	}
