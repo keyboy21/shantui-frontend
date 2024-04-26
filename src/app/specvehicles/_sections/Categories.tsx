@@ -14,13 +14,17 @@ export const VehicleCategories: FC<VehicleCategoriesProps> = ({
 	const router = useRouter();
 
 	const filterBulldozers = (id: number | null) => {
-		if (id) {
+		if (!id) {
 			startTransition(() => {
-				router.replace(`${RouterConfig.SpecVehicles()}?category=${id}`);
+				router.push(RouterConfig.SpecVehicles(), {
+					scroll: false,
+				});
 			});
 		} else {
 			startTransition(() => {
-				router.push(RouterConfig.SpecVehicles());
+				router.replace(`${RouterConfig.SpecVehicles()}?category=${id}`, {
+					scroll: false,
+				});
 			});
 		}
 	};
@@ -45,7 +49,7 @@ export const VehicleCategories: FC<VehicleCategoriesProps> = ({
 							)}
 							key={id}
 						>
-							{name}
+							<span className="cursor-pointer">{name}</span>
 						</li>
 					))}
 				</ul>

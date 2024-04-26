@@ -2,9 +2,7 @@ import { BASE_URL } from '@/configs/env.config';
 import { Categories, Category } from '@/types/api.types';
 
 export async function getBulldozerCategories(): Promise<Category[]> {
-	const res = await fetch(`${BASE_URL}/api/stc`, {
-		next: { revalidate: 86400 },
-	});
+	const res = await fetch(`${BASE_URL}/api/stc`);
 	if (!res.ok) {
 		return [];
 	}

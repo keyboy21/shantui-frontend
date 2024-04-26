@@ -24,6 +24,10 @@ export const generateMetadata: DynamicMetadata = async ({ params }) => {
 	const data: ResFactory = await res.json();
 	return {
 		title: data.data.name,
+		openGraph: {
+			title: data.data.name,
+			images: getBackendImage(data.data.image),
+		},
 	};
 };
 

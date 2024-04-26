@@ -1,39 +1,39 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
 	return [
 		{
-			url: 'https://shantuiuzb.com',
+			url: 'https://sttkm.uz',
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
 			priority: 1,
 		},
 		{
-			url: 'https://shantuiuzb.com/specvehicles',
+			url: 'https://sttkm.uz/specvehicles',
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
 			priority: 0.9,
 		},
 		{
-			url: 'https://shantuiuzb.com/factories',
+			url: 'https://sttkm.uz/factories',
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
 			priority: 0.8,
 		},
 		{
-			url: 'https://shantuiuzb.com/projects',
+			url: 'https://sttkm.uz/projects',
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
 			priority: 0.5,
 		},
 		{
-			url: 'https://shantuiuzb.com/service',
+			url: 'https://sttkm.uz/service',
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
 			priority: 0.4,
 		},
 		{
-			url: 'https://shantuiuzb.com/contacts',
+			url: 'https://sttkm.uz/contacts',
 			lastModified: new Date(),
 			changeFrequency: 'yearly',
 			priority: 0.7,

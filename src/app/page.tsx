@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const HomePage: Page = async () => {
 	const headersList = headers();
 	const device = headersList.get('sec-ch-ua-mobile');
-	const isMobile = device === '?1' ? true : false;
+	const isMobile = device  === '?1';
 
 	return (
 		<>

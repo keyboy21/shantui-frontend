@@ -12,9 +12,7 @@ export const metadata: Metadata = {
 };
 
 async function getFactories(): Promise<Factory[]> {
-	const res = await fetch(`${BASE_URL}/api/f`, {
-		next: { revalidate: 86400 },
-	});
+	const res = await fetch(`${BASE_URL}/api/f`);
 	if (!res.ok) {
 		return [];
 	}
