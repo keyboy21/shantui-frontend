@@ -9,6 +9,7 @@
     "start": "next start",
     "lint:next": "next lint",
     "lint": "npx @biomejs/biome lint ./src",
+    "lint:fix": "npx @biomejs/biome check --apply ./src",
     "check-types": "npx tsc --pretty --noEmit",
     "format:check": "npx @biomejs/biome check ./src",
     "format": "npx @biomejs/biome format --write ./src"

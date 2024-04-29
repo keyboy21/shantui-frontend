@@ -1,7 +1,7 @@
 'use client';
 import { Container } from '@/components/ui/Container';
 import { RouterConfig } from '@/configs/router.config';
-import { Category } from '@/types/api.types';
+import type { Category } from '@/types/api.types';
 import { cn } from '@/utils/cn.util';
 import { useRouter } from 'next/navigation';
 import type { FC } from 'react';

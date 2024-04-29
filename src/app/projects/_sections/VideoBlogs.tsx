@@ -1,7 +1,7 @@
 import { Container } from '@/components/ui/Container';
 import { VideoCard } from '@/components/ui/VideoCard';
 import { BASE_URL } from '@/configs/env.config';
-import { Blog, Blogs } from '@/types/api.types';
+import type { Blog, Blogs } from '@/types/api.types';
 
 async function getBlogs(): Promise<Blog[]> {
 	const res = await fetch(`${BASE_URL}/api/blog`);

@@ -2,7 +2,7 @@ import { getBulldozer } from '@/api/getBulldozers.api';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { DialogProvider } from '@/contexts';
-import { DynamicMetadata, Page } from '@/types/next.types';
+import type { DynamicMetadata, Page } from '@/types/next.types';
 import Markdown from 'markdown-to-jsx';
 import NextImage from 'next/image';
 import { notFound } from 'next/navigation';
