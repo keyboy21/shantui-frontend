@@ -15,6 +15,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'shantui.42.com.uz',
 			},
+			{
+				protocol: 'http',
+				hostname: 'shantui.42.com.uz',
+			},
 		],
 	},
 	headers: async () => {
