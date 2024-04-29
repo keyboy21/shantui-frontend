@@ -5,7 +5,7 @@ import { BASE_URL } from '@/configs/env.config';
 import { RouterConfig } from '@/configs/router.config';
 import type { Factories, Factory } from '@/types/api.types';
 import { getBackendImage } from '@/utils/getBackendImage.util';
-import { Metadata } from 'next/types';
+import type { Metadata } from 'next/types';
 
 export const metadata: Metadata = {
 	title: 'Заводы',

@@ -1,5 +1,5 @@
 import { BASE_URL } from '@/configs/env.config';
-import { Vehicle } from '@/types/api.types';
+import type { Vehicle } from '@/types/api.types';
 
 export async function getBulldozers(): Promise<Vehicle[]> {
 	const res = await fetch(`${BASE_URL}/api/st/`);

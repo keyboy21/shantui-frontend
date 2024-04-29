@@ -1,5 +1,5 @@
 import { cn } from '@/utils/cn.util';
-import { ComponentProps, FC } from 'react';
+import type { ComponentProps, FC } from 'react';
 
 export const Paragraph: FC<ParagraphProps> = ({
 	size = 'base',

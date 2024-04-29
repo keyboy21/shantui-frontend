@@ -3,7 +3,7 @@ import { Heading } from '@/components/ui/Heading';
 import HeadingImage from '../../../public/service-back.webp';
 import NextImage from 'next/image';
 import { VideoBlogs } from '@/app/projects/_sections/VideoBlogs';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Сервис',

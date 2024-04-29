@@ -1,6 +1,6 @@
 import { Heading } from '@/components/ui/Heading';
 import { LinkButton } from '@/components/ui/LinkButton';
-import { Vehicle } from '@/types/api.types';
+import type { Vehicle } from '@/types/api.types';
 import { cn } from '@/utils/cn.util';
 import NextImage from 'next/image';
 import type { FC } from 'react';
