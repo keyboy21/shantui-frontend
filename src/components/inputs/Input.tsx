@@ -1,5 +1,5 @@
 import { cn } from '@/utils/cn.util';
-import { ComponentPropsWithoutRef, FC } from 'react';
+import type { ComponentPropsWithoutRef, FC } from 'react';
 
 export const Input: FC<InputProps> = ({
 	className,
