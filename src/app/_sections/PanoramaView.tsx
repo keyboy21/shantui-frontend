@@ -114,7 +114,7 @@ export const PanoramaView = () => {
     return (
         <section className="mt-[100px]">
             <Container className="py-10">
-                <View360 ref={viewerRef} className={cn('h-[500px] max-w-[800px] mx-auto')} projection={projection} >
+                <View360 gyro ref={viewerRef} className={cn('h-[500px] max-w-[800px] mx-auto')} projection={projection} >
                     <div className="view360-hotspots">
                         {currentScane?.hostspots.map((data) => (
                             <div key={data.id}
