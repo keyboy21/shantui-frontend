@@ -12,6 +12,7 @@ import Picture1 from '../../../../public/Carousel/sayt1.webp';
 import Picture2 from '../../../../public/Carousel/sayt2.webp';
 import Picture3 from '../../../../public/Carousel/sayt3.webp';
 import Picture4 from '../../../../public/Carousel/sayt4.webp';
+import ReactPlayer from 'react-player/youtube';
 
 export const CarouselSection = () => {
 	return (
@@ -30,12 +31,10 @@ export const CarouselSection = () => {
 			>
 				<CarouselContent>
 					<CarouselItem>
-						<iframe
-							loading="lazy"
+						<ReactPlayer
 							width={'100%'}
 							height={'100%'}
-							src="https://www.youtube.com/embed/TJX-f4TZiAw?autoplay=0&mute=1&loop=1"
-							title="youtube"
+							url="https://www.youtube.com/watch?v=1ysuueKsjhQ"
 						/>
 					</CarouselItem>
 					<CarouselItem>
@@ -50,10 +49,10 @@ export const CarouselSection = () => {
 						<NextImage className="w-full" src={Picture2} alt="bulldozer" />
 					</CarouselItem>
 					<CarouselItem>
-						<NextImage className="w-full" src={Picture3} alt="bulldozer" />
+						<NextImage className="w-full" src={Picture3} alt="bulldozer2" />
 					</CarouselItem>
 					<CarouselItem>
-						<NextImage className="w-full" src={Picture4} alt="bulldozer" />
+						<NextImage className="w-full" src={Picture4} alt="bulldozer3" />
 					</CarouselItem>
 				</CarouselContent>
 				<CarouselPrevious />
