@@ -1,6 +1,6 @@
-import { CarouselSection } from '@/components/staticSections/Carousel';
-import { FeatureIcons } from '@/components/staticSections/FeatureIcons';
-import { TeamSection } from '@/components/staticSections/OurtTeam';
+import { CarouselSection } from '@/app/_sections/CarouselSection';
+import { FeatureIcons } from '@/app/_sections/FeatureIcons';
+import { TeamSection } from '@/app/_sections/OurTeamSection';
 import { Container } from '@/components/ui/Container';
 import { GMap } from '@/components/ui/GMap';
 import { Heading } from '@/components/ui/Heading';

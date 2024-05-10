@@ -9,7 +9,7 @@ import {
 } from '@/components/feedback/Dialog';
 import { Input } from '@/components/inputs/Input';
 import { Button } from '@/components/ui/Button';
-import { useDialogData } from '@/contexts';
+import { useDialogData } from '@/contexts/use-alert-dialog';
 import { useRef } from 'react';
 
 export const DialogForm = ({ productName }: { productName: string }) => {

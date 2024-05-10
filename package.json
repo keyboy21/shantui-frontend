@@ -33,7 +33,7 @@
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.1",
+    "@biomejs/biome": "^1.7.3",
     "@tailwindcss/forms": "^0.5.7",
     "@types/node": "^20.12.7",
     "@types/react": "^18.3.1",

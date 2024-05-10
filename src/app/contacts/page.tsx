@@ -1,8 +1,8 @@
-import { ContactForm } from '@/components/forms';
+import { ContactForm } from '@/components/forms/ContactForm';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Paragraph } from '@/components/ui/Paragraph';
-import { DialogProvider } from '@/contexts';
+import { DialogProvider } from '@/contexts/use-alert-dialog';
 import type { Metadata } from 'next/types';
 
 export const metadata: Metadata = {

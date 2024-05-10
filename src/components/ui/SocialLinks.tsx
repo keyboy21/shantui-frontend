@@ -1,6 +1,6 @@
-import Instagram from '../../../../public/FixedLinks/instagram-fixed.svg';
-import YouTube from '../../../../public/FixedLinks/youtube-fixed.svg';
-import FaceBook from '../../../../public/FixedLinks/facebook-fixed.svg';
+import Instagram from '../../../public/FixedLinks/instagram-fixed.svg';
+import YouTube from '../../../public/FixedLinks/youtube-fixed.svg';
+import FaceBook from '../../../public/FixedLinks/facebook-fixed.svg';
 import NextImage from 'next/image';
 
 export const SocialLinks = () => {

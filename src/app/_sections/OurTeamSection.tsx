@@ -2,19 +2,19 @@ import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { Paragraph } from '@/components/ui/Paragraph';
 import NextImage from 'next/image';
-import Accauntant from '../../../../public/Team/chief-accountant.png';
-import Mechanic from '../../../../public/Team/chief-mechanical-engineer.png';
-import Cook from '../../../../public/Team/cook.webp';
-import Director from '../../../../public/Team/general-director.png';
-import Olim from '../../../../public/Team/olim-salesmanagerjpg.jpg';
-import Zam from '../../../../public/Team/Abduvali-zam.jpg';
-import Mahliyo from '../../../../public/Team/mahliyo-ofismanager.jpg';
-import Mansur from '../../../../public/Team/mansur-smm.jpg';
+import Accauntant from '../../../public/Team/chief-accountant.png';
+import Mechanic from '../../../public/Team/chief-mechanical-engineer.png';
+import Cook from '../../../public/Team/cook.webp';
+import Director from '../../../public/Team/general-director.png';
+import Olim from '../../../public/Team/olim-salesmanagerjpg.jpg';
+import Zam from '../../../public/Team/Abduvali-zam.jpg';
+import Mahliyo from '../../../public/Team/mahliyo-ofismanager.jpg';
+import Mansur from '../../../public/Team/mansur-smm.jpg';
 // import MarketingManager from '../../../../public/Team/marketing-manager.webp';
 // import OfficeManager from '../../../../public/Team/office-manager.webp';
 // import SalesManager from '../../../../public/Team/sales-manager.webp';
 // import SalesManager2 from '../../../../public/Team/sales-manager2.webp';
-import TenderManager from '../../../../public/Team/tender-procurement-manager.webp';
+import TenderManager from '../../../public/Team/tender-procurement-manager.webp';
 
 export const TeamSection = () => {
 	return (
