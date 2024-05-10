@@ -4,6 +4,7 @@ import { cn } from '@/utils/cn.util';
 import View360, {
 	EquirectProjection,
 	LoadingSpinner,
+	ControlBar,
 } from '@egjs/react-view360';
 import '@egjs/react-view360/css/view360.min.css';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -122,8 +123,14 @@ export const PanoramaView = () => {
 		<section className="mt-[100px]">
 			<Container className="py-10">
 				<View360
-					plugins={[new LoadingSpinner()]}
-					gyro
+					plugins={[
+						new LoadingSpinner(),
+						new ControlBar({
+							gyroButton: true,
+							fullscreenButton: true,
+							pieView: false,
+						}),
+					]}
 					ref={viewerRef}
 					className={cn('h-[500px] max-w-[800px] mx-auto')}
 					projection={projection}
