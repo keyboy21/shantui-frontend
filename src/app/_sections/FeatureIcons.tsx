@@ -1,8 +1,8 @@
 import { Container } from '@/components/ui/Container';
 import NextImage from 'next/image';
-import CorrectIcon from '../../../../public/correct-icon.svg';
-import HomeIcon from '../../../../public/home-icon.svg';
-import ServiceIcon from '../../../../public/service-icon.svg';
+import CorrectIcon from '../../../public/correct-icon.svg';
+import HomeIcon from '../../../public/home-icon.svg';
+import ServiceIcon from '../../../public/service-icon.svg';
 
 export const FeatureIcons = () => {
 	return (

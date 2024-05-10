@@ -8,10 +8,10 @@ import {
 } from '@/components/ui/Carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import NextImage from 'next/image';
-import Picture1 from '../../../../public/Carousel/sayt1.webp';
-import Picture2 from '../../../../public/Carousel/sayt2.webp';
-import Picture3 from '../../../../public/Carousel/sayt3.webp';
-import Picture4 from '../../../../public/Carousel/sayt4.webp';
+import Picture1 from '../../../public/Carousel/sayt1.webp';
+import Picture2 from '../../../public/Carousel/sayt2.webp';
+import Picture3 from '../../../public/Carousel/sayt3.webp';
+import Picture4 from '../../../public/Carousel/sayt4.webp';
 import ReactPlayer from 'react-player/youtube';
 
 export const CarouselSection = () => {
