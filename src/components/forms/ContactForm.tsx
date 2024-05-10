@@ -2,7 +2,7 @@
 import { sendContactMessage } from '@/actions/sendContactMessage';
 import { Input } from '@/components/inputs/Input';
 import { TextArea } from '@/components/inputs/TextArea';
-import { useDialogData } from '@/contexts';
+import { useDialogData } from '@/contexts/use-alert-dialog';
 import { useRef } from 'react';
 import { Submit } from './Submit';
 

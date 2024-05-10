@@ -1,8 +1,8 @@
-import { DialogForm } from '@/components/forms';
+import { DialogForm } from '@/components/forms/DialogForm';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
 import { BASE_URL } from '@/configs/env.config';
-import { DialogProvider } from '@/contexts';
+import { DialogProvider } from '@/contexts/use-alert-dialog';
 import type { Factory } from '@/types/api.types';
 import type { DynamicMetadata, Page } from '@/types/next.types';
 import { getBackendImage } from '@/utils/getBackendImage.util';

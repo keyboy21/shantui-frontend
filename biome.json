@@ -9,9 +9,12 @@
 			"recommended": true,
 			"a11y": {
 				"useKeyWithClickEvents": "off"
+			},
+			"performance": {
+				"all": true
 			}
 		},
-		"ignore": [".next", "node_modules"]
+		"ignore": [ ".next", "node_modules" ]
 	},
 	"javascript": {
 		"formatter": {
@@ -20,6 +23,6 @@
 		}
 	},
 	"formatter": {
-		"ignore": [".next", "node_modules"]
+		"ignore": [ ".next", "node_modules" ]
 	}
 }

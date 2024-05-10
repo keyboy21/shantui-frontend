@@ -1,12 +1,12 @@
 import { getBulldozer } from '@/api/getBulldozers.api';
 import { Container } from '@/components/ui/Container';
 import { Heading } from '@/components/ui/Heading';
-import { DialogProvider } from '@/contexts';
+import { DialogProvider } from '@/contexts/use-alert-dialog';
 import type { DynamicMetadata, Page } from '@/types/next.types';
 import Markdown from 'markdown-to-jsx';
 import NextImage from 'next/image';
 import { notFound } from 'next/navigation';
-import { DialogForm } from '@/components/forms';
+import { DialogForm } from '@/components/forms/DialogForm';
 
 export const generateMetadata: DynamicMetadata = async ({ params }) => {
 	const { slug } = params;
