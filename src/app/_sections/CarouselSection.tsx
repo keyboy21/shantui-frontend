@@ -12,7 +12,7 @@ import Picture1 from '../../../public/Carousel/sayt1.webp';
 import Picture2 from '../../../public/Carousel/sayt2.webp';
 import Picture3 from '../../../public/Carousel/sayt3.webp';
 import Picture4 from '../../../public/Carousel/sayt4.webp';
-import ReactPlayer from 'react-player/youtube';
+import { YouTubeEmbed } from '@next/third-parties/google';
 
 export const CarouselSection = () => {
 	return (
@@ -31,10 +31,9 @@ export const CarouselSection = () => {
 			>
 				<CarouselContent>
 					<CarouselItem>
-						<ReactPlayer
-							width={'100%'}
-							height={'100%'}
-							url="https://www.youtube.com/watch?v=1ysuueKsjhQ"
+						<YouTubeEmbed
+							style="width:100%; height:100%; max-height:709px;max-width: none;"
+							videoid="1ysuueKsjhQ"
 						/>
 					</CarouselItem>
 					<CarouselItem>
