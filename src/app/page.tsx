@@ -16,16 +16,12 @@ export const metadata: Metadata = {
 };
 
 const HomePage: Page = async () => {
-	const headersList = headers();
-	const device = headersList.get('sec-ch-ua-mobile');
-	const isMobile = device === '?1';
-
 	return (
 		<>
 			{/* Fixed Social Links */}
 			<SocialLinks />
 			{/* Carousel */}
-			{isMobile ? null : <CarouselSection />}
+			<CarouselSection />
 			{/* Categories */}
 			<CategorySection />
 			{/* Feature Icons */}
