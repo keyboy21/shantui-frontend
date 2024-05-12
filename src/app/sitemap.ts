@@ -5,13 +5,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 		{
 			url: 'https://sttkm.uz',
 			lastModified: new Date(),
-			changeFrequency: 'yearly',
+			changeFrequency: 'monthly',
 			priority: 1,
 		},
 		{
 			url: 'https://sttkm.uz/specvehicles',
 			lastModified: new Date(),
-			changeFrequency: 'yearly',
+			changeFrequency: 'monthly',
 			priority: 0.9,
 		},
 		{
