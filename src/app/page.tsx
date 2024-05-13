@@ -6,11 +6,10 @@ import { GMap } from '@/components/ui/GMap';
 import { Heading } from '@/components/ui/Heading';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import type { Page } from '@/types/next.types';
-import { headers } from 'next/headers';
 import type { Metadata } from 'next/types';
 import { CategorySection } from './_sections/CategorySection';
-import { VideoBlogsSection } from './_sections/VideoBlogsSection';
 import { PanoramaView } from './_sections/PanoramaView';
+import { VideoBlogsSection } from './_sections/VideoBlogsSection';
 
 export const metadata: Metadata = {
 	title: 'Главная',
