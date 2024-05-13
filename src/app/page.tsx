@@ -23,7 +23,7 @@ const HomePage: Page = async () => {
 			{/* Fixed Social Links */}
 			{/* <SocialLinks /> */}
 			{/* Carousel */}
-      {/* <CarouselSection /> */}
+			{/* <CarouselSection /> */}
 			{/* Categories */}
 			{/* <CategorySection /> */}
 			{/* Feature Icons */}
