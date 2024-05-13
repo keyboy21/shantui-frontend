@@ -6,11 +6,9 @@ import { GMap } from '@/components/ui/GMap';
 import { Heading } from '@/components/ui/Heading';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import type { Page } from '@/types/next.types';
-import { headers } from 'next/headers';
 import type { Metadata } from 'next/types';
 import { CategorySection } from './_sections/CategorySection';
 import { VideoBlogsSection } from './_sections/VideoBlogsSection';
-import { PanoramaView } from './_sections/PanoramaView';
 
 export const metadata: Metadata = {
 	title: 'Главная',
@@ -19,21 +17,20 @@ export const metadata: Metadata = {
 const HomePage: Page = async () => {
 	return (
 		<>
-			<PanoramaView />
 			{/* Fixed Social Links */}
-			{/* <SocialLinks /> */}
+			<SocialLinks />
 			{/* Carousel */}
-      {/* <CarouselSection /> */}
+			<CarouselSection />
 			{/* Categories */}
-			{/* <CategorySection /> */}
+			<CategorySection />
 			{/* Feature Icons */}
-			{/* <FeatureIcons /> */}
+			<FeatureIcons />
 			{/* Our Team */}
-			{/* <TeamSection /> */}
+			<TeamSection />
 			{/* Video Materials */}
-			{/* <VideoBlogsSection /> */}
+			<VideoBlogsSection />
 			{/* Map */}
-			{/* <section className="my-16">
+			<section className="my-16">
 				<Container>
 					<Heading
 						as="h2"
@@ -45,7 +42,7 @@ const HomePage: Page = async () => {
 					</Heading>
 					<GMap className="h-[400px]" />
 				</Container>
-			</section> */}
+			</section>
 		</>
 	);
 };
