@@ -8,8 +8,22 @@ import { SocialLinks } from '@/components/ui/SocialLinks';
 import type { Page } from '@/types/next.types';
 import type { Metadata } from 'next/types';
 import { CategorySection } from './_sections/CategorySection';
-import { PanoramaView } from './_sections/PanoramaView';
+// import { PanoramaView } from './_sections/PanoramaView';
 import { VideoBlogsSection } from './_sections/VideoBlogsSection';
+import { Skeleton } from '@/components/ui/Skeleton';
+import dynamic from 'next/dynamic';
+
+const PanoramaView = dynamic(
+	() => import('@/app/_sections/PanoramaView').then((mod) => mod.PanoramaView),
+	{
+		ssr: false,
+		loading: () => (
+			<Container className="py-10">
+				<Skeleton className="mt-[100px] w-full h-[500px] max-w-[800px] mx-auto bg-slate-300" />
+			</Container>
+		),
+	},
+);
 
 export const metadata: Metadata = {
 	title: 'Главная',
