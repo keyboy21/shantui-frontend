@@ -1,5 +1,4 @@
 'use client';
-import { Container } from '@/components/ui/Container';
 import { cn } from '@/utils/cn.util';
 import View360, {
 	EquirectProjection,
@@ -120,36 +119,32 @@ export const PanoramaView = () => {
 	}, [currentScane]);
 
 	return (
-		<section className="mt-[100px]">
-			<Container className="py-10">
-				<View360
-					plugins={[
-						new LoadingSpinner(),
-						new ControlBar({
-							gyroButton: true,
-							fullscreenButton: true,
-							pieView: false,
-						}),
-					]}
-					ref={viewerRef}
-					className={cn('h-[500px] max-w-[800px] mx-auto')}
-					projection={projection}
-				>
-					<div className="view360-hotspots">
-						{currentScane?.hostspots.map((data) => (
-							<div
-								key={data.id}
-								onClickCapture={() => changeRoom(data.id)}
-								className="view360-hotspot cursor-pointer text-xl text-white font-semibold underline"
-								data-yaw={data.yaw}
-								data-pitch={data.pitch}
-							>
-								{data.name}
-							</div>
-						))}
+		<View360
+			plugins={[
+				new LoadingSpinner(),
+				new ControlBar({
+					gyroButton: true,
+					fullscreenButton: true,
+					pieView: false,
+				}),
+			]}
+			ref={viewerRef}
+			className={cn('h-[500px] max-w-[800px] mx-auto')}
+			projection={projection}
+		>
+			<div className="view360-hotspots">
+				{currentScane?.hostspots.map((data) => (
+					<div
+						key={data.id}
+						onClickCapture={() => changeRoom(data.id)}
+						className="view360-hotspot cursor-pointer text-xl text-white font-semibold underline"
+						data-yaw={data.yaw}
+						data-pitch={data.pitch}
+					>
+						{data.name}
 					</div>
-				</View360>
-			</Container>
-		</section>
+				))}
+			</div>
+		</View360>
 	);
 };

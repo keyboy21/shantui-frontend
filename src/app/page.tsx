@@ -18,9 +18,7 @@ const PanoramaView = dynamic(
 	{
 		ssr: false,
 		loading: () => (
-			<Container className="py-10">
-				<Skeleton className="mt-[100px] w-full h-[500px] max-w-[800px] mx-auto bg-slate-300" />
-			</Container>
+			<Skeleton className="w-full h-[500px] max-w-[800px] mx-auto bg-amber-400" />
 		),
 	},
 );
@@ -32,7 +30,11 @@ export const metadata: Metadata = {
 const HomePage: Page = async () => {
 	return (
 		<>
-			<PanoramaView />
+			<section className="mt-[100px]">
+				<Container className="py-10">
+					<PanoramaView />
+				</Container>
+			</section>
 			{/* Fixed Social Links */}
 			{/* <SocialLinks /> */}
 			{/* Carousel */}
