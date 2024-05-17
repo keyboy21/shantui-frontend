@@ -31,7 +31,7 @@ export const CategorySection = async () => {
 								image={getBackendImage(category.image)}
 								name={category.name}
 								buttonStyle="secondary"
-								cardType='category'
+								cardType="category"
 							/>
 						))}
 					</Container>
