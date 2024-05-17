@@ -18,7 +18,7 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 			className={cn(
 				'pb-10 pt-3 flex flex-col shadow-lg bg-white',
 				{
-					'px-6': cardType === 'vehicle',
+					'px-6': cardType === 'vehicle' || 'category',
 					'px-3': cardType === 'factory',
 				},
 				className,
@@ -26,19 +26,19 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 		>
 			<div
 				className={cn('min-w-64 relative group', {
-					'min-h-72': cardType === 'vehicle',
+					'min-h-72': cardType === 'vehicle' || 'category',
 					'min-h-80': cardType === 'factory',
 				})}
 			>
 				<NextImage
 					className={cn('object-center', {
 						'object-contain group-hover:scale-110 transition-transform duration-200':
-							cardType === 'vehicle',
+							cardType === 'vehicle' || 'category',
 						'object-cover rounded-md object-center': cardType === 'factory',
 					})}
 					src={image}
 					fill
-					priority
+					priority={cardType === 'category'}
 					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 					alt="bulldozer"
 				/>
@@ -47,7 +47,8 @@ export const BulldozerCard: FC<BulldozerCardProps> = ({
 				<Heading
 					as="h3"
 					className={cn('text-balance mb-5', {
-						'font-semibold text-xl xl:text-2xl': cardType === 'vehicle',
+						'font-semibold text-xl xl:text-2xl':
+							cardType === 'vehicle' || 'category',
 						'font-medium text-lg': cardType === 'factory',
 					})}
 				>
