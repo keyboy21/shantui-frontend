@@ -1,1 +1,0 @@
-export { GMap } from './GMap';

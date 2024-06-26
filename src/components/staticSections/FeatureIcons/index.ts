@@ -1,1 +1,0 @@
-export { FeatureIcons } from './FeatureIcons';

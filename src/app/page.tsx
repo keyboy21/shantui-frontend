@@ -1,12 +1,11 @@
-import { CarouselSection } from '@/components/staticSections/Carousel';
-import { FeatureIcons } from '@/components/staticSections/FeatureIcons';
-import { TeamSection } from '@/components/staticSections/OurtTeam';
+import { CarouselSection } from '@/app/_sections/CarouselSection';
+import { FeatureIcons } from '@/app/_sections/FeatureIcons';
+import { TeamSection } from '@/app/_sections/OurTeamSection';
 import { Container } from '@/components/ui/Container';
 import { GMap } from '@/components/ui/GMap';
 import { Heading } from '@/components/ui/Heading';
 import { SocialLinks } from '@/components/ui/SocialLinks';
 import type { Page } from '@/types/next.types';
-import { headers } from 'next/headers';
 import type { Metadata } from 'next/types';
 import { CategorySection } from './_sections/CategorySection';
 import { VideoBlogsSection } from './_sections/VideoBlogsSection';
@@ -16,16 +15,12 @@ export const metadata: Metadata = {
 };
 
 const HomePage: Page = async () => {
-	const headersList = headers();
-	const device = headersList.get('sec-ch-ua-mobile');
-	const isMobile = device === '?1';
-
 	return (
 		<>
 			{/* Fixed Social Links */}
 			<SocialLinks />
 			{/* Carousel */}
-			{isMobile ? null : <CarouselSection />}
+			<CarouselSection />
 			{/* Categories */}
 			<CategorySection />
 			{/* Feature Icons */}

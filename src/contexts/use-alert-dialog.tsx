@@ -8,7 +8,7 @@ import {
 	AlertDialogHeader,
 	AlertDialogTitle,
 } from '@/components/feedback/AlertDialog';
-import { useDialog } from '@/hooks';
+import { useDialog } from '@/hooks/useDialog';
 import type { FC } from 'react';
 import { createContext, useContext } from 'react';
 

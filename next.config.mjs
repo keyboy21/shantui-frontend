@@ -28,7 +28,7 @@ const nextConfig = {
 				headers: [
 					{
 						key: 'X-Developed-By',
-						value: 'Yusuf Saydullayev',
+						value: 'Yusufboy Saydullayev',
 					},
 				],
 			},

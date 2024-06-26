@@ -9,9 +9,9 @@ import Script from 'next/script';
 const montserrat = Montserrat({ subsets: ['cyrillic'] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://shantuiuzb.com'),
+	metadataBase: new URL('https://sttkm.uz'),
 	openGraph: {
-		title: 'Shantui',
+		title: 'SPETS TEXNIKA TASHKENT',
 	},
 	twitter: {
 		card: 'summary_large_image',
@@ -27,10 +27,6 @@ const RootLayout: LayoutComponent = async ({ children }) => {
 				<meta
 					name="description"
 					content="Компания СП ООО 'SPETS TEXNIKA TASHKENT' (Спецтехника Ташкент) - имеет 17 летний опыт в сфере поставок спецтехники и оборудования из Китая."
-				/>
-				<meta
-					name="keywords"
-					content="Shantui, Автобетоносмесители,Самосвалы,Фронтальные погрузчики, Автогрейдеры,Колесные экскаваторы,Башенные краны,Компакторы,Кирпичные линии,Мельницы дробления минерального порошка, Карьерные самосвалы"
 				/>
 			</head>
 			<body
